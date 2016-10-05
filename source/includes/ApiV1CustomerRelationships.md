@@ -1,7 +1,5 @@
 # Customer Relationships
 
-* [Select New Customer](#select-new-customer)
-
 **Customer Relationships** are created between ODs and customers. ODs can only see a customer personal information if they already have this relationship. Because of that, ODs can't see personal information of new/unassigned customers and/or customers assigned to another OD.
 
 #### Structure

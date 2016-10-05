@@ -1,9 +1,5 @@
 # Visits
 
-* [List](#list)
-* [Show](#show)
-* [Update](#update)
-
 A _**Visit**_ represents a single interaction between a customer and us. Visits are the primary workflow element for ODs and CSRs in our model. With a visit, you can get to a customer, a prescription, and payments.
 
 #### Structure

@@ -1,7 +1,5 @@
 # Customer Results
 
-* [Show](#show)
-
 These are the **Customer Results** after his assigned OD had a decision based on the customer's test results. It's used to build the customer results page, where the customer can print his prescription and use it to order new glasses.
 
 #### Structure

@@ -1,11 +1,5 @@
 # Users
 
-* [List](#list)
-* [Show](#show)
-* [Create](#create)
-* [Update](#update)
-* [Delete](#delete)
-
 **Users** can be created, updated, deleted and shown on the insight database. Each one can have or not a role and will belong to a single organization. ODs and Admins can administrate the users.
 
 #### Structure

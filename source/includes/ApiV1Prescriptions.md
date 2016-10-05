@@ -1,9 +1,5 @@
 # Prescriptions
 
-* [Show](#show)
-* [Create](#create)
-* [Update](#update)
-
 If the OD decided to create a **Prescription**, an instance is created and saved on the database. Is also possible for the OD to update the visit.
 
 #### Structure

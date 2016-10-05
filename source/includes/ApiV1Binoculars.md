@@ -1,7 +1,5 @@
 # Binocular
 
-* [Show](#show)
-
 **Binoculars** are test results structures containing the binocular data (va, pd, etc.), as the two monoculars instances of customer right and left eyes.
 
 #### Structure

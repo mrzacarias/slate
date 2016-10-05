@@ -5,17 +5,15 @@ language_tabs:
   - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
+  - <a href='https://github.com/EyeNetra/portal-api'>Insight API github repository</a>
 
 includes:
- - ApiV1Appointments.md
  - ApiV1BasicAuthentication.md
+
+ - ApiV1Appointments.md
  - ApiV1Binoculars.md
  - ApiV1BookVisit.md
- - ApiV1CustomerAuthentication.md
  - ApiV1CustomerRelationships.md
- - ApiV1CustomerResults.md
  - ApiV1Customers.md
  - ApiV1Emails.md
  - ApiV1HealthCheck.md
@@ -28,12 +26,12 @@ includes:
  - ApiV1ReadingsImport.md
  - ApiV1Search.md
  - ApiV1SignUp.md
- - ApiV1TabletAuthentication.md
- - ApiV1TelerxFlow.md
  - ApiV1TestResults.md
  - ApiV1Users.md
  - ApiV1Visits.md
- - errors
+
+ - ApiV1CustomerAuthentication.md
+ - ApiV1CustomerResults.md
 
 search: true
 ---

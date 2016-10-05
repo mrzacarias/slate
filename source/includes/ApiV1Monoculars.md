@@ -1,7 +1,5 @@
 # Monocular
 
-* [Show](#show)
-
 **Monoculars** are the test result structure responsible to keep the refraction data of a specific eye (Right or Left). Always associated with a Binocular structure.
 
 #### Structure

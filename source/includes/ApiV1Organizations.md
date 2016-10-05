@@ -1,11 +1,5 @@
 # Organizations
 
-* [List](#list)
-* [Show](#show)
-* [Create](#create)
-* [Update](#update)
-* [Delete](#delete)
-
 **Organizations** are a logic division inside the Insight portal. All ODs, Admins and other users belongs to one and only organization and can make their actions only with elements (customers, visits, test results, etc.) related to this specific organization.
 
 #### Authentication

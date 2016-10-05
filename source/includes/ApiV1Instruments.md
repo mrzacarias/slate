@@ -1,8 +1,5 @@
 # Instruments
 
-* [List](#list)
-* [Show](#show)
-
 **Instruments** are structures containing the organization devices information. For EyeNetra devices, the information about each instrument (id, type, etc.) is saved/updated after every new test result finished and uploaded.
 
 #### Structure

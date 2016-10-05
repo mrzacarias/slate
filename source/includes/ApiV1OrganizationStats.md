@@ -1,7 +1,5 @@
 # Organization Stats
 
-* [List](#list)
-
 List of **Organization Stats** of the requester organization, as visits, customers and test results counts.
 
 #### Structure

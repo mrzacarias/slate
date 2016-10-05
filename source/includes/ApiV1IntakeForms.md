@@ -1,8 +1,5 @@
 # Intake Forms
 
-* [Filtered List](#filtered-list)
-* [Show](#show)
-
 **Intake Forms** information of visits uploaded via TeleRx flow.
 
 #### Authentication

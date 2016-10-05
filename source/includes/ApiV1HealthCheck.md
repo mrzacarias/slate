@@ -1,7 +1,5 @@
 # Health Check
 
-[Index](#index)
-
 **Health check** verification without authorization requirement.
 
 #### Authentication

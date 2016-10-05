@@ -1,8 +1,5 @@
 # Test Results
 
-* [List](#list)
-* [Show](#show)
-
 The **Test Results** are the logic structure used to save the readings from Netra and Netrometer devices and, also, the customer's screening and contacts information.
 
 #### Authentication

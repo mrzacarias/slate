@@ -1,7 +1,5 @@
 # Book Visit
 
-* [Create](#create)
-
 The **Book Visit** endpoint is responsible to save all the data acquired during a complete visit (readings, customer information, etc.) on the insight database.
 
 #### Authentication

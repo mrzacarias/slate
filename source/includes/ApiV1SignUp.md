@@ -1,7 +1,5 @@
 # SignUp
 
-* [Create](#create)
-
 After a customer bought a Netra product, he needs  to **SignUp** to start using his new device. This sign up are responsible to create a organization which encapsulates all the data of this new user, as the user instance itself.
 
 #### Authentication

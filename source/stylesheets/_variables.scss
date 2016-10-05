@@ -36,7 +36,7 @@ $nav-bg: $netra-shade-blue; // #393939;
 $examples-bg: #393939;
 $code-bg: #292929;
 $code-annotation-bg: #1c1c1c;
-$nav-subitem-bg: #262626;
+$nav-subitem-bg: $netra-gray-blue;
 $nav-active-bg: $netra-blue; // #2467af;
 $lang-select-border: #000;
 $lang-select-bg: #222;
@@ -96,12 +96,12 @@ $phone-width: $tablet-width - $nav-width; // min width before reverting to mobil
 
 // OTHER
 ////////////////////
-$nav-active-shadow: #000;
-$nav-footer-border-color: #666;
+$nav-active-shadow: $netra-shade-blue; //#000;
+$nav-footer-border-color: white;
 $nav-embossed-border-top: #000;
 $nav-embossed-border-bottom: #939393;
 $main-embossed-text-shadow: 0px 1px 0px #fff;
-$search-box-border-color: #666;
+$search-box-border-color: white;
 
 
 ////////////////////////////////////////////////////////////////////////////////

@@ -1,9 +1,5 @@
 # Customers
 
-* [List](#list)
-* [Show](#show)
-* [Select New Customer](#select-new-customer)
-
 These endpoints returns Eyenetra's **Customers** personal information as list or specific instance. The **"Select New Customer"** endpoint, though, is responsible to create an [customer relationship](ApiV1CustomerRelationships) between the current OD and the next new customer in line.
 
 #### Structure

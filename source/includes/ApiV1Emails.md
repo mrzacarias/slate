@@ -1,7 +1,5 @@
 # Emails
 
-[Filtered list](#filtered-list)
-
 List of **Emails** sent to the customer of a specific visit.
 
 #### Structure

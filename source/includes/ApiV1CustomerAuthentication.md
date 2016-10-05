@@ -1,8 +1,5 @@
 # Customer Authentication
 
-* [Customer Login](#customer-login)
-* [Customer Logout](#customer-logout)
-
 #### Authenticated Requests
 
 Customer API requests requiring authentication must have an authorization header with a valid API token.

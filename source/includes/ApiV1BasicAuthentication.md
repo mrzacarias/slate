@@ -1,8 +1,5 @@
 # Basic Authentication
 
-* [Login](#login)
-* [Logout](#logout)
-
 #### Authenticated Requests
 
 All API requests requiring authentication must have an authorization header with a valid API token.

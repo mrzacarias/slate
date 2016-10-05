@@ -20,15 +20,24 @@ under the License.
 ////////////////////////////////////////////////////////////////////////////////
 // Use these settings to help adjust the appearance of Slate
 
+//Netra blue
+$netra-blue: #28a5de;
+
+//Netra shade blue (apenas para elementos complementares)
+$netra-shade-blue: #1e80c2;
+
+//Netra Gray blue (cinza azulado escuro)
+$netra-gray-blue: #484c56;
+
 
 // BACKGROUND COLORS
 ////////////////////
-$nav-bg: #393939;
+$nav-bg: $netra-shade-blue; // #393939;
 $examples-bg: #393939;
 $code-bg: #292929;
 $code-annotation-bg: #1c1c1c;
 $nav-subitem-bg: #262626;
-$nav-active-bg: #2467af;
+$nav-active-bg: $netra-blue; // #2467af;
 $lang-select-border: #000;
 $lang-select-bg: #222;
 $lang-select-active-bg: $examples-bg; // feel free to change this to blue or something
@@ -68,12 +77,13 @@ $phone-width: $tablet-width - $nav-width; // min width before reverting to mobil
 // FONTS
 ////////////////////
 %default-font {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
   font-size: 13px;
 }
 
 %header-font {
-  @extend %default-font;
+  //@extend %default-font;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 

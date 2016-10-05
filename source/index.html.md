@@ -1,10 +1,7 @@
 ---
-title: API Reference
+title: Insight API
 
 language_tabs:
-  - shell
-  - ruby
-  - python
   - javascript
 
 toc_footers:
@@ -12,7 +9,31 @@ toc_footers:
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
-  - errors
+ - ApiV1Appointments.md
+ - ApiV1BasicAuthentication.md
+ - ApiV1Binoculars.md
+ - ApiV1BookVisit.md
+ - ApiV1CustomerAuthentication.md
+ - ApiV1CustomerRelationships.md
+ - ApiV1CustomerResults.md
+ - ApiV1Customers.md
+ - ApiV1Emails.md
+ - ApiV1HealthCheck.md
+ - ApiV1Instruments.md
+ - ApiV1IntakeForms.md
+ - ApiV1Monoculars.md
+ - ApiV1OrganizationStats.md
+ - ApiV1Organizations.md
+ - ApiV1Prescriptions.md
+ - ApiV1ReadingsImport.md
+ - ApiV1Search.md
+ - ApiV1SignUp.md
+ - ApiV1TabletAuthentication.md
+ - ApiV1TelerxFlow.md
+ - ApiV1TestResults.md
+ - ApiV1Users.md
+ - ApiV1Visits.md
+ - errors
 
 search: true
 ---
@@ -186,4 +207,3 @@ This endpoint retrieves a specific kitten.
 Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to retrieve
-

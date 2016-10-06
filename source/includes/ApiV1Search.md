@@ -16,8 +16,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Query
 
-`GET /api/v1/search?q={query}`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/search?q=test
 
 ````
@@ -65,3 +63,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
   ]
 }
 ````
+
+### HTTP Request
+
+`GET /api/v1/search?q={query}`

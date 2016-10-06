@@ -17,10 +17,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## List
 
-### HTTP Request
-
-`GET /api/v1/instruments/`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/instruments/
 
 ````
@@ -48,11 +44,11 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
-## Show
-
 ### HTTP Request
 
-`GET /api/v1/instruments/{id}`
+`GET /api/v1/instruments/`
+
+## Show
 
 > https://dev-portal-api.eyenetra.com:7443/api/v1/instruments/1
 
@@ -69,3 +65,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
+
+### HTTP Request
+
+`GET /api/v1/instruments/{id}`

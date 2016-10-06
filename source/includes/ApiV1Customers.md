@@ -24,13 +24,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## List
 
-### HTTP Request
-
-`GET /api/v1/customers`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/customers?decision=prescribed
-
-Obs.: To CSV exported data, add .csv as the format.
 
 ````
 {
@@ -63,6 +57,12 @@ Obs.: To CSV exported data, add .csv as the format.
   ]
 }
 ````
+
+### HTTP Request
+
+`GET /api/v1/customers`
+
+Obs.: To CSV exported data, add .csv as the format.
 
 ## Filtering, Searching and Sorting
 
@@ -117,29 +117,7 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 
 ## Show
 
-### HTTP Request
-
-`GET /api/v1/customers/<id>`
-
-Note: user must be at least a CSR or in the case of an OD, have a relationship with the customer, else the response will be 403 Forbidden
-
-* id
-* first_name
-* last_name
-* created_at
-* updated_at
-
-The following fields are included only if CSR or Admin level access:
-* email
-* phone
-* address
-* city
-* state
-* zip_code
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/customers/5
-
-Obs.: To CSV exported data, add .csv as the format.
 
 ````
 {
@@ -161,19 +139,29 @@ Obs.: To CSV exported data, add .csv as the format.
 }
 ````
 
-## Select New Customer
+### HTTP Request
 
-`GET /api/v1/select_new_customer`
+`GET /api/v1/customers/<id>`
 
-Note: user must be an OD, else the response will be 403 Forbidden
+Obs.: To CSV exported data, add .csv as the format.
+
+Note: user must be at least a CSR or in the case of an OD, have a relationship with the customer, else the response will be 403 Forbidden
 
 * id
-* customer_id
-* payment_id
-* status
-* decision
+* first_name
+* last_name
 * created_at
 * updated_at
+
+The following fields are included only if CSR or Admin level access:
+* email
+* phone
+* address
+* city
+* state
+* zip_code
+
+## Select New Customer
 
 > https://dev-portal-api.eyenetra.com:7443/api/v1/select_new_customer
 
@@ -188,3 +176,15 @@ Note: user must be an OD, else the response will be 403 Forbidden
   "updated_at":"2014-12-23T19:23:56.824Z"
 }
 ````
+
+`GET /api/v1/select_new_customer`
+
+Note: user must be an OD, else the response will be 403 Forbidden
+
+* id
+* customer_id
+* payment_id
+* status
+* decision
+* created_at
+* updated_at

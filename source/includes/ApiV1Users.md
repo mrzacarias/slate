@@ -25,10 +25,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## List
 
-### HTTP Request
-
-`GET /api/v1/users`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/users
 
 ````
@@ -65,6 +61,10 @@ All requests require <a href="#basic-authentication">authentication</a>.
   ]
 }
 ````
+
+### HTTP Request
+
+`GET /api/v1/users`
 
 ## Filtering, Searching and Sorting
 
@@ -116,10 +116,6 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 
 ## Show
 
-### HTTP Request
-
-`GET /api/v1/users/{id}`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/users/2
 
 ````
@@ -140,13 +136,14 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 }
 ````
 
-## Create
-
 ### HTTP Request
 
-`POST /api/v1/users`
+`GET /api/v1/users/{id}`
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/users/
+
+## Create
+
+> Request Body
 
 ````
 {
@@ -159,6 +156,8 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 }
 ````
 
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users/
+
 ````
 {
   "user": {
@@ -176,14 +175,15 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
   }
 }
 ````
+### HTTP Request
+
+`POST /api/v1/users`
+
 
 ## Update
 
-### HTTP Request
 
-`PUT /api/v1/users/{id}`
-
-> https://dev-portal-api.eyenetra.com:7443/api/v1/users/
+> Request Body
 
 ````
 {
@@ -196,6 +196,8 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 }
 ````
 
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users/
+
 ````
 {
   "user": {
@@ -214,11 +216,12 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 }
 ````
 
-## Delete
-
 ### HTTP Request
 
-`DELETE /api/v1/users/{id}`
+`PUT /api/v1/users/{id}`
+
+
+## Delete
 
 > https://dev-portal-api.eyenetra.com:7443/api/v1/users/2
 
@@ -227,3 +230,7 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
   "info": "Success"
 }
 ````
+
+### HTTP Request
+
+`DELETE /api/v1/users/{id}`

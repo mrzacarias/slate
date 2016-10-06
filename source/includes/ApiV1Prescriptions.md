@@ -26,10 +26,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Show
 
-### HTTP Request
-
-`GET /api/v1/prescriptions/{:id}`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions/1
 
 ````
@@ -52,13 +48,53 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+### HTTP Request
+
+`GET /api/v1/prescriptions/{:id}`
+
 ## Create
+
+> Request Body
+
+````
+{
+  "left_sph":"0.25",
+  "recommended_use":"Near",
+  "note":"How many fingers am I holding up?",
+  "visit_id":221
+}
+````
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions
+
+````
+{
+  "prescription":    
+    {
+      "id": 1,
+      "left_sph": -1.25,
+      "left_cyl": 0.4,
+      "left_axis": 180,
+      "left_add": -2,
+      "right_sph": 1.25,
+      "right_cyl": -0.5,
+      "right_axis": 90,
+      "right_add": 2.5,
+      "pd": 65,
+      "near_pd": 62,
+      "recommended_use": "Near",
+      "prescribing_od_id": 5
+    }
+}
+````
 
 ### HTTP Request
 
 `POST /api/v1/prescriptions`
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions
+## Update
+
+> Request Body
 
 ````
 {
@@ -68,6 +104,8 @@ All requests require <a href="#basic-authentication">authentication</a>.
   "visit_id":221
 }
 ````
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions
 
 ````
 {
@@ -89,41 +127,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
     }
 }
 ````
-
-## Update
 
 ### HTTP Request
 
 `PUT /api/v1/prescriptions`
-
-> https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions
-
-````
-{
-  "left_sph":"0.25",
-  "recommended_use":"Near",
-  "note":"How many fingers am I holding up?",
-  "visit_id":221
-}
-````
-
-````
-{
-  "prescription":    
-    {
-      "id": 1,
-      "left_sph": -1.25,
-      "left_cyl": 0.4,
-      "left_axis": 180,
-      "left_add": -2,
-      "right_sph": 1.25,
-      "right_cyl": -0.5,
-      "right_axis": 90,
-      "right_add": 2.5,
-      "pd": 65,
-      "near_pd": 62,
-      "recommended_use": "Near",
-      "prescribing_od_id": 5
-    }
-}
-````

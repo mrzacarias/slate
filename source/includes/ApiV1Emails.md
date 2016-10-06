@@ -20,8 +20,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Filtered List
 
-`GET /api/v1/emails?visit_id=[visit id]`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/emails?visit_id=123
 
 ````
@@ -46,3 +44,5 @@ All requests require <a href="#basic-authentication">authentication</a>.
   ]
 }
 ````
+
+`GET /api/v1/emails?visit_id=[visit id]`

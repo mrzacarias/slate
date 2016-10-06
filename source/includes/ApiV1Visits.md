@@ -31,15 +31,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## List
 
-### HTTP Request
-
-`GET /api/v1/visits`
-
-Get a list of visits. 
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/visits
-
-Obs.: To CSV exported data, add .csv as the format.
 
 ````
 {
@@ -99,6 +91,14 @@ Obs.: To CSV exported data, add .csv as the format.
 }
 ````
 
+Get a list of visits. 
+
+### HTTP Request
+
+`GET /api/v1/visits`
+
+Obs.: To CSV exported data, add .csv as the format.
+
 ## Filtering, Searching and Sorting
 
 ### Filters
@@ -152,13 +152,7 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 
 ## Show
 
-### HTTP Request
-
-`GET /api/v1/visits/:id`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/visits/1
-
-Obs.: To CSV exported data, add .csv as the format.
 
 ````
 {
@@ -188,15 +182,15 @@ Obs.: To CSV exported data, add .csv as the format.
 }
 ````
 
-## Update
-
 ### HTTP Request
 
-`PUT /api/v1/visits/:id`
+`GET /api/v1/visits/:id`
 
-Update a visit, for example to mark a decision. 
+Obs.: To CSV exported data, add .csv as the format.
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/visits/1
+## Update
+
+> Request Body
 
 ````
 {
@@ -208,6 +202,8 @@ Update a visit, for example to mark a decision.
     }
 }
 ````
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/visits/1
 
 ````
 {
@@ -222,3 +218,9 @@ Update a visit, for example to mark a decision.
     }
 }
 ````
+
+Update a visit, for example to mark a decision. 
+
+### HTTP Request
+
+`PUT /api/v1/visits/:id`

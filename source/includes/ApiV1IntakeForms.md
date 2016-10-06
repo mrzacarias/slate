@@ -30,10 +30,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Filtered List
 
-### HTTP Request
-
-`GET /api/v1/intake_forms?filter[customers][email]=customer@mail.com`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/intake_forms?filter[customers][email]=milk@example.com
 
 ````
@@ -93,11 +89,12 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
-## Show
-
 ### HTTP Request
 
-`GET /api/v1/intake_forms/{:intake_form_id}`
+`GET /api/v1/intake_forms?filter[customers][email]=customer@mail.com`
+
+
+## Show
 
 > https://dev-portal-api.eyenetra.com:7443/api/v1/intake_forms/58
 
@@ -127,3 +124,8 @@ All requests require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
+
+### HTTP Request
+
+`GET /api/v1/intake_forms/{:intake_form_id}`
+

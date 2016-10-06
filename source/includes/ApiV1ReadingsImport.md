@@ -8,11 +8,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Create
 
-### HTTP Request
-
-`POST /api/v1/readings_import/`
-
-> https://dev-portal-api.eyenetra.com:7443/api/v1/readings_import/
+> Request Body
 
 ````
 {
@@ -69,9 +65,15 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+> https://dev-portal-api.eyenetra.com:7443/api/v1/readings_import/
+
 ````
 {
   "info": "Success",
   "test_result_id": 20997
 }
 ````
+
+### HTTP Request
+
+`POST /api/v1/readings_import/`

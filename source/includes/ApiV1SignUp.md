@@ -8,11 +8,7 @@ Do not require <a href="#basic-authentication">authentication</a>.
 
 ## Create
 
-### HTTP Request
-
-`POST /api/v1/sign_up/`
-
-> https://dev-portal-api.eyenetra.com:7443/api/v1/sign_up/
+> Request Body
 
 ````
 {
@@ -29,6 +25,8 @@ Do not require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/sign_up/
 
 ````
 {
@@ -82,3 +80,8 @@ Do not require <a href="#basic-authentication">authentication</a>.
   "token": "d75f861ed4401338b736ac4849d80862"
 }
 ````
+
+### HTTP Request
+
+`POST /api/v1/sign_up/`
+

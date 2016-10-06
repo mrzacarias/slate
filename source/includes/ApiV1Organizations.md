@@ -8,10 +8,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## List
 
-### HTTP Request
-
-`GET /api/v1/organizations`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/organizations
 
 ````
@@ -42,12 +38,32 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+### HTTP Request
+
+`GET /api/v1/organizations`
+
 ## Show
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
+
+````
+{
+  "organization": {
+    "id": 1,
+    "name": "blink",
+    "kind": "multiple_ODs_with_visioneers",
+    "logo": "GoBlink.png",
+    "template": "blink"
+  }
+}
+````
 
 ### HTTP Request
 
 `GET /api/v1/organizations/{:organization_id}`
 
+## Create
+
 > https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
 
 ````
@@ -61,13 +77,13 @@ All requests require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
-
-## Create
 
 ### HTTP Request
 
 `POST /api/v1/organizations/`
 
+## Update
+
 > https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
 
 ````
@@ -81,43 +97,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
-
-## Update
 
 ### HTTP Request
 
 `PUT /api/v1/organizations/{:organization_id}`
-
-> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
-
-````
-{
-  "organization": {
-    "id": 1,
-    "name": "blink",
-    "kind": "multiple_ODs_with_visioneers",
-    "logo": "GoBlink.png",
-    "template": "blink"
-  }
-}
-````
-
-## Delete
-
-### HTTP Request
-
-`DELETE /api/v1/organizations/{:organization_id}`
-
-> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
-
-````
-{
-  "organization": {
-    "id": 1,
-    "name": "blink",
-    "kind": "multiple_ODs_with_visioneers",
-    "logo": "GoBlink.png",
-    "template": "blink"
-  }
-}
-````

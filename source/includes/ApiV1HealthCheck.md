@@ -10,10 +10,6 @@ Do not require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/health_check`
-
-* version: [semver](http://semver.org) formatted string
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/health_check
 
 ````
@@ -21,3 +17,7 @@ Do not require <a href="#basic-authentication">authentication</a>.
   "version":"0.3.0"
 }
 ````
+
+`GET /api/v1/health_check`
+
+* version: [semver](http://semver.org) formatted string

@@ -8,11 +8,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## List
 
-`GET /api/v1/test_results/`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/test_results
-
-Obs.: To CSV exported data, add .csv as the format.
 
 ````
 {
@@ -47,6 +43,12 @@ Obs.: To CSV exported data, add .csv as the format.
   ]
 }
 ````
+
+### HTTP Request
+
+`GET /api/v1/test_results/`
+
+Obs.: To CSV exported data, add .csv as the format.
 
 ## Filtering, Searching and Sorting
 
@@ -102,13 +104,7 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 
 ## Show
 
-### HTTP Request
-
-`GET /api/v1/test_results/{:test_result_id}`
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/test_results/1
-
-Obs.: To CSV exported data, add .csv as the format.
 
 ````
 {
@@ -137,3 +133,9 @@ Obs.: To CSV exported data, add .csv as the format.
   }
 }
 ````
+
+### HTTP Request
+
+`GET /api/v1/test_results/{:test_result_id}`
+
+Obs.: To CSV exported data, add .csv as the format.

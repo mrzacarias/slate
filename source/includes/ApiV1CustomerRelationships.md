@@ -8,12 +8,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Select New Customer
 
-### HTTP Request
-
-`GET /api/v1/select_new_customer`
-
-Note: user must be an OD, else the response will be 403 Forbidden
-
 > https://dev-portal-api.eyenetra.com:7443/api/v1/select_new_customer
 
 ````
@@ -26,3 +20,9 @@ Note: user must be an OD, else the response will be 403 Forbidden
   "updated_at":"2014-12-23T19:23:56.824Z"
 }
 ````
+
+### HTTP Request
+
+`GET /api/v1/select_new_customer`
+
+Note: user must be an OD, else the response will be 403 Forbidden

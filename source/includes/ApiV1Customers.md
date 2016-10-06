@@ -29,14 +29,14 @@ These endpoints returns Eyenetra's **Customers** personal information as list or
 Field           | Description
 --------------- | -------------------------------------------------------------------------------
 id              | The object ID
-first_name      |  TODO
-last_name       | TODO
-email           | TODO
-phone           | TODO
-address         | TODO
-city            | TODO
-state           | TODO
-zip_code        | TODO
+first_name      | The Customer first name
+last_name       | The Customer last name 
+email           | The Customer email, used to send the e-prescription
+phone           | The Customer phone
+address         | The Customer address
+city            | The Customer city
+state           | The Customer state
+zip_code        | The Customer zip_code
 created_at      | When this object was created
 updated_at      | Last time this objected was updated
 

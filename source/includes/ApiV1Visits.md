@@ -37,23 +37,19 @@ A _**Visit**_ represents a single interaction between a customer and us. Visits 
 Field               | Description
 ------------------- | -----------------------------------------------------------------------------
 id                  | The object ID
-customer_id         |  TODO
-status              | TODO
-decision            | TODO
-decision_note       | TODO
-test_confidence     | TODO
-distance_preference | TODO
-near_preference     | TODO
-screening_id        | TODO
-netra_id            | TODO
-predisposition      | TODO
-uuid                | TODO
-contacts_id         | TODO
-internal_note       | TODO
-netrometer_id       | TODO
-created_at      | When this object was created
-updated_at      | Last time this objected was updated
-organization_id | ID of the Organization associated with this element
+customer_id         | The ID of the customer related to this visit
+status              | The current status of this visit, can be new, incomplete or completed
+decision            | The OD's decision for this visit, can be passed, referred or prescribed
+decision_note       | The patient note
+contacts_id         | Contacts test ID
+screening_id        | Screening test ID
+netra_id            | Netra test ID
+netrometer_id       | Netrometer test ID
+uuid                | UUID, used to sync
+internal_note       | The internal note, used for internal use 
+created_at          | When this object was created
+updated_at          | Last time this objected was updated
+organization_id     | ID of the Organization associated with this element
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

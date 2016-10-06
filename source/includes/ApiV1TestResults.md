@@ -15,12 +15,6 @@
     "distance_eyewear": "Constant wear glasses",
     "near_eyewear": "Constant wear glasses",
     "test_method": "Screening",
-    "right_image_id_1": null,
-    "right_image_id_2": null,
-    "right_image_id_3": null,
-    "left_image_id_1": null,
-    "left_image_id_2": null,
-    "left_image_id_3": null,
     "device_id": null,
     "app_version": null,
     "distance_binocular_id": 1,
@@ -36,27 +30,19 @@ The **Test Results** are the logic structure used to save the readings from Netr
 
 Field             | Description
 ----------------- | -------------------------------------------------------------------------------
-id                |  TODO
-longitude         | TODO
-latitude          | TODO
-uuid              | TODO
-exam_date         | TODO
-distance_eyewear  | TODO
-near_eyewear      | TODO
-test_method       | TODO
-right_image_id_1  | TODO
-right_image_id_2  | TODO
-right_image_id_3  | TODO
-left_image_id_1   | TODO
-left_image_id_2   | TODO
-left_image_id_3   | TODO
-device_id         | TODO
-app_version       | TODO
-distance_binocular_id | TODO
-near_binocular_id | TODO
-notes             | TODO
-created_at      | When this object was created
-updated_at      | Last time this objected was updated
+id                | Id of this object
+longitude         | Longitude coordinate where this reading was taken
+latitude          | Latitude coordinate where this reading was taken
+uuid              | UUID, used for sync
+exam_date         | Date where this reading was taken
+test_method       | Method or Device used to create this reading (Screening, contacts, Netra, Netrometer, etc.)
+device_id         | ID of the device used
+app_version       | Version of the APP (Netra or Netrometer)
+distance_binocular_id | Distance binocular ID
+near_binocular_id | Near binocular ID
+notes             | Notes (Tags) added during the reading
+created_at        | When this object was created
+updated_at        | Last time this objected was updated
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
@@ -81,12 +67,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
       "updated_at": "2015-11-16T21:53:25.314Z",
       "retinal_sync_id": null,
       "retinal_protocol_version": null,
-      "right_image_id_1": null,
-      "right_image_id_2": null,
-      "right_image_id_3": null,
-      "left_image_id_1": null,
-      "left_image_id_2": null,
-      "left_image_id_3": null,
       "organization_id": 1,
       "longitude": "-71.08785",
       "latitude": "42.374336",
@@ -175,12 +155,6 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
     "distance_eyewear": "Constant wear glasses",
     "near_eyewear": "Constant wear glasses",
     "test_method": "Screening",
-    "right_image_id_1": null,
-    "right_image_id_2": null,
-    "right_image_id_3": null,
-    "left_image_id_1": null,
-    "left_image_id_2": null,
-    "left_image_id_3": null,
     "device_id": null,
     "app_version": null,
     "distance_binocular_id": 1,

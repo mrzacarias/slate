@@ -9,7 +9,6 @@
     "first_name": "user",
     "last_name": "user",
     "email": "user@eyenetra.com",
-    "signature": null,
     "title": null,
     "license_number": null,
     "license_state": null,
@@ -27,16 +26,14 @@
 Field             | Description
 ----------------- | -------------------------------------------------------------------------------
 id                | The object ID
-first_name        |  TODO
-last_name         | TODO
-email             | TODO
-signature         | TODO
-title             | TODO
-license_number    | TODO
-license_state     | TODO
-npi               | TODO
-role_ids          | TODO
-created_at      | When this object was created
+first_name        | User's first name
+last_name         | User's last name
+email             | User's email
+title             | Title (ODs)
+license_number    | License Number (ODs)
+license_state     | License State (ODs)
+npi               | NPI (ODs)
+created_at        | When this object was created
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
@@ -54,7 +51,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
       "first_name": "user",
       "last_name": "user",
       "email": "user@eyenetra.com",
-      "signature": null,
       "title": null,
       "license_number": null,
       "license_state": null,
@@ -67,7 +63,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
       "first_name": "admin",
       "last_name": "admin",
       "email": "admin@eyenetra.com",
-      "signature": null,
       "title": "Admin",
       "license_number": null,
       "license_state": null,
@@ -95,7 +90,6 @@ The following columns are available for filtering:
 * first_name
 * last_name
 * email
-* signature
 * title
 * license_number
 * license_state
@@ -144,7 +138,6 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
     "first_name": "user",
     "last_name": "user",
     "email": "user@eyenetra.com",
-    "signature": null,
     "title": null,
     "license_number": null,
     "license_state": null,
@@ -184,7 +177,6 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
     "first_name": "user",
     "last_name": "user",
     "email": "user@eyenetra.com",
-    "signature": null,
     "title": null,
     "license_number": null,
     "license_state": null,
@@ -224,7 +216,6 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
     "first_name": "user",
     "last_name": "user",
     "email": "user@eyenetra.com",
-    "signature": null,
     "title": null,
     "license_number": null,
     "license_state": null,

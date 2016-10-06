@@ -29,18 +29,18 @@ If the OD decided to create a **Prescription**, an instance is created and saved
 Field             | Description
 ----------------- | -------------------------------------------------------------------------------
 id                | The object ID
-left_sph          |  TODO
-left_cyl          | TODO
-left_axis         | TODO
-left_add          | TODO
-right_sph         | TODO
-right_cyl         | TODO
-right_axis        | TODO
-right_add         | TODO
-pd                | TODO
-near_pd           | TODO
-recommended_use   | TODO
-prescribing_od_id | TODO
+left_sph          | The left eye sphere reading
+left_cyl          | The left eye cylinder reading
+left_axis         | The left eye axis reading
+left_add          | The left eye add reading
+right_sph         | The right eye sphere reading
+right_cyl         | The right eye cylinder reading
+right_axis        | The right eye axis reading
+right_add         | The right eye add reading
+pd                | The prescription PD
+near_pd           | The prescription Near PD
+recommended_use   | Prescription user recommendation (Far, Near or Both)
+prescribing_od_id | ID of the correspondent OD
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

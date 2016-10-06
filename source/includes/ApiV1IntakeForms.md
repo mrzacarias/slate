@@ -86,8 +86,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
       "hear_about_us": null,
       "how_wear_glasses": null,
       "additional_info": null
-    },
-    ...
+    }
   ]
 }
 ````

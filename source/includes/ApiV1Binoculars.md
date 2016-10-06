@@ -13,7 +13,7 @@
     "right_eye_id": 1,
     "left_eye_id": 2
   },
-  "monoculars": [...]
+  "monoculars": ["..."]
 }
 ````
 
@@ -45,7 +45,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
     "right_eye_id": 1,
     "left_eye_id": 2
   },
-  "monoculars": [...]
+  "monoculars": ["..."]
 }
 ````
 

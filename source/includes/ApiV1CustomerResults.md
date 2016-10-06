@@ -62,9 +62,9 @@ Note: if the uuid is not valid (no customer with a prescription with this uuid i
     "test_result_ids": [],
     "organization_id": 1
   },
-  "roles": [...],
-  "appointments": [...],
-  "prescribing_ods": [...],
+  "roles": ["..."],
+  "appointments": ["..."],
+  "prescribing_ods": ["..."],
   "prescriptions": [
     {
       "id": 1,
@@ -82,10 +82,10 @@ Note: if the uuid is not valid (no customer with a prescription with this uuid i
       "prescribing_od_id": 5
     }
   ],
-  "intake_forms": [...],
-  "test_results": [...],
-  "visit_note": [...],
-  "customer_relationship": [...],
+  "intake_forms": ["..."],
+  "test_results": ["..."],
+  "visit_note": ["..."],
+  "customer_relationship": ["..."],
   "visits": [
     {
       "id": 2,
@@ -130,12 +130,10 @@ Note: if the uuid is not valid (no customer with a prescription with this uuid i
       "created_at": "2016-06-20T19:51:40.105Z",
       "updated_at": "2016-06-20T19:51:42.118Z",
       "birthdate": "1950-01-01",
-      "visit_ids": [
-        2
-      ]
+      "visit_ids": [2]
     }
   ],
-  "users": [...],
-  "organizations": [...],
+  "users": ["..."],
+  "organizations": ["..."]
 }
 ````

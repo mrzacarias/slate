@@ -29,7 +29,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
       "instrument_id": -1,
       "instrument_type": "Netra",
       "organization_id": 1,
-      "test_result_ids": [...],
+      "test_result_ids": ["..."],
       "created_at": "2016-06-20T22:06:56.899Z",
       "updated_at": "2016-06-20T22:06:56.899Z"
     },
@@ -38,7 +38,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
       "instrument_id": 406,
       "instrument_type": "Netra",
       "organization_id": 1,
-      "test_result_ids": [...],
+      "test_result_ids": ["..."],
       "created_at": "2016-06-20T20:02:35.687Z",
       "updated_at": "2016-06-20T20:02:35.687Z"
     }
@@ -61,7 +61,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
     "instrument_id": 406,
     "instrument_type": "Netra",
     "organization_id": 1,
-    "test_result_ids": [...],
+    "test_result_ids": ["..."],
     "created_at": "2016-06-20T20:02:35.687Z",
     "updated_at": "2016-06-20T20:02:35.687Z"
   }

@@ -24,7 +24,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## List
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/instruments/
+> Response Example 
 
 ````
 {
@@ -57,7 +57,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Show
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/instruments/1
+> Response Example 
 
 ````
 {

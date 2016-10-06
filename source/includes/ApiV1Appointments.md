@@ -40,7 +40,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## List
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/appointments/
+> Response Example 
 
 ````
 {
@@ -86,7 +86,7 @@ None
 
 The show request will return the appointment for the ID passed as parameter.
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/appointments/40
+> Response Example 
 
 ````
 {

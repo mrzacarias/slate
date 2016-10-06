@@ -8,7 +8,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## List
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations
+> Response Example 
 
 ````
 {
@@ -44,7 +44,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Show
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
+> Response Example 
 
 ````
 {
@@ -64,7 +64,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Create
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
+> Response Example 
 
 ````
 {
@@ -84,7 +84,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Update
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
+> Response Example 
 
 ````
 {

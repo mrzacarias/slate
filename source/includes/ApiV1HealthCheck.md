@@ -10,7 +10,7 @@ Do not require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/health_check
+> Response Example 
 
 ````
 {

@@ -52,7 +52,7 @@ Do not require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/book_visit
+> Response Example 
 
 ````
 {

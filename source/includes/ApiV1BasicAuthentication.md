@@ -19,7 +19,7 @@ Authorization: Token token="123456......abcdef"
 }
 ````
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/login
+> Response Example 
 
 ````
 {
@@ -70,7 +70,7 @@ The API logout is a DELETE request. The API will use the token on the authorizat
 Authorization: Token token="123456......abcdef"
 ````
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/logout
+> Response Example 
 
 ````
 {

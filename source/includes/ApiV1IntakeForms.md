@@ -37,7 +37,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Filtered List
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/intake_forms?filter[customers][email]=milk@example.com
+> Response Example 
 
 ````
 {
@@ -103,7 +103,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Show
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/intake_forms/58
+> Response Example 
 
 ````
 {

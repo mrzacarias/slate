@@ -31,7 +31,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Filtered List
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/emails?visit_id=123
+> Response Example 
 
 ````
 { 

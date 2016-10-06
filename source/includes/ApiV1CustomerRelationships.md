@@ -8,7 +8,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Select New Customer
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/select_new_customer
+> Response Example 
 
 ````
 {

@@ -42,7 +42,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## Show
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/customer_results/00000000-0000-0000-0000-000000000000
+> Response Example 
 
 ````
 {

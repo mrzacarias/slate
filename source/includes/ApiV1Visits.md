@@ -57,7 +57,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## List
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/visits
+> Response Example 
 
 ````
 {
@@ -178,7 +178,7 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 
 ## Show
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/visits/1
+> Response Example 
 
 ````
 {
@@ -229,7 +229,7 @@ Obs.: To CSV exported data, add .csv as the format.
 }
 ````
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/visits/1
+> Response Example 
 
 ````
 {

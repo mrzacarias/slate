@@ -50,7 +50,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ## List
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/test_results
+> Response Example 
 
 ````
 {
@@ -140,7 +140,7 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 
 ## Show
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/test_results/1
+> Response Example 
 
 ````
 {

@@ -35,7 +35,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 `GET /api/v1/organization_stats/`
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/organization_stats/
+> Response Example 
 
 ````
 {

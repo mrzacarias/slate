@@ -7,12 +7,8 @@ Do not require <a href="#basic-authentication">authentication</a>.
 </aside>
 
 ## Create
-  
-### HTTP Request
 
-`POST /api/v1/book_visit`
-
-> https://dev-portal-api.eyenetra.com:7443/api/v1/book_visit
+> Request Body
 
 ````
 {
@@ -55,6 +51,8 @@ Do not require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/book_visit
 
 ````
 {
@@ -138,3 +136,16 @@ Do not require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
+
+### HTTP Request
+
+`POST /api/v1/book_visit`
+
+### Body Parameters
+
+Parameter       | Description
+--------------- | -------------------------------------------------------------------------------
+user            | OD user ID to whom this visit will be related
+customer        | Customer personal information
+intake          | Customer intake information information
+appointment     | Appointment information

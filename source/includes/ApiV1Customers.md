@@ -29,7 +29,7 @@ These endpoints returns Eyenetra's **Customers** personal information as list or
 Field           | Description
 --------------- | -------------------------------------------------------------------------------
 id              | The object ID
-first_name      | TODO
+first_name      |  TODO
 last_name       | TODO
 email           | TODO
 phone           | TODO
@@ -37,8 +37,8 @@ address         | TODO
 city            | TODO
 state           | TODO
 zip_code        | TODO
-created_at      | TODO
-updated_at      | TODO
+created_at      | When this object was created
+updated_at      | Last time this objected was updated
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

@@ -12,14 +12,6 @@
 
 **Search** is the endpoint to make general queries that will return customers, readings and visits related to the term passed as argument.
 
-### Structure
-
-Field             | Description
------------------ | -------------------------------------------------------------------------------
-customers         | TODO
-readings          | TODO
-visits            | TODO
-
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
 </aside>

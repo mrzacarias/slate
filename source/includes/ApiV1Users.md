@@ -27,7 +27,7 @@
 Field             | Description
 ----------------- | -------------------------------------------------------------------------------
 id                | The object ID
-first_name        | TODO
+first_name        |  TODO
 last_name         | TODO
 email             | TODO
 signature         | TODO
@@ -35,9 +35,8 @@ title             | TODO
 license_number    | TODO
 license_state     | TODO
 npi               | TODO
-created_at        | TODO
-updated_at        | TODO
 role_ids          | TODO
+created_at      | When this object was created
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

@@ -37,9 +37,7 @@ A _**Visit**_ represents a single interaction between a customer and us. Visits 
 Field               | Description
 ------------------- | -----------------------------------------------------------------------------
 id                  | The object ID
-customer_id         | TODO
-created_at          | TODO
-updated_at          | TODO
+customer_id         |  TODO
 status              | TODO
 decision            | TODO
 decision_note       | TODO
@@ -52,8 +50,10 @@ predisposition      | TODO
 uuid                | TODO
 contacts_id         | TODO
 internal_note       | TODO
-organization_id     | TODO
 netrometer_id       | TODO
+created_at      | When this object was created
+updated_at      | Last time this objected was updated
+organization_id | ID of the Organization associated with this element
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

@@ -8,24 +8,15 @@
     "id": 1,
     "instrument_id": 406,
     "instrument_type": "Netra",
-    "organization_id": 1,
     "test_result_ids": ["..."],
     "created_at": "2016-06-20T20:02:35.687Z",
-    "updated_at": "2016-06-20T20:02:35.687Z"
+    "updated_at": "2016-06-20T20:02:35.687Z",
+    "organization_id": 1
   }
 }
 ````
 
 **Instruments** are structures containing the organization devices information. For EyeNetra devices, the information about each instrument (id, type, etc.) is saved/updated after every new test result finished and uploaded.
-
-### Structure
-
-Field            | Description
----------------- | -------------------------------------------------------------------------------
-id               | The object ID
-instrument_id    | TODO
-instrument_type  | TODO
-test_result_ids  | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

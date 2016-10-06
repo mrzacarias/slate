@@ -31,28 +31,6 @@
 
 **Intake Forms** information of visits uploaded via TeleRx flow.
 
-### Structure
-
-Field             | Description
------------------ | -------------------------------------------------------------------------------
-id                | The object ID
-is_driver         | TODO
-eye_brain_surgery | TODO
-terms_accepted_on | TODO
-occupation        | TODO
-prescriptions     | TODO
-inches_from_screen| TODO
-last_eye_exam     | TODO
-visit_id          | TODO
-eye_symptoms      | TODO
-requested_eyewear | TODO
-health_conditions | TODO
-current_eyewear   | TODO
-reasons_for_visit_eyewear   | TODO
-has_driving_vision_trouble  | TODO
-vision_insurance            | TODO
-hear_about_us               | TODO
-
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
 </aside>

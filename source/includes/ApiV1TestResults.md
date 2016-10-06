@@ -36,7 +36,7 @@ The **Test Results** are the logic structure used to save the readings from Netr
 
 Field             | Description
 ----------------- | -------------------------------------------------------------------------------
-id                | TODO
+id                |  TODO
 longitude         | TODO
 latitude          | TODO
 uuid              | TODO
@@ -55,8 +55,8 @@ app_version       | TODO
 distance_binocular_id | TODO
 near_binocular_id | TODO
 notes             | TODO
-created_at        | TODO
-updated_at        | TODO
+created_at      | When this object was created
+updated_at      | Last time this objected was updated
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

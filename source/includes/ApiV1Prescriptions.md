@@ -29,7 +29,7 @@ If the OD decided to create a **Prescription**, an instance is created and saved
 Field             | Description
 ----------------- | -------------------------------------------------------------------------------
 id                | The object ID
-left_sph          | TODO
+left_sph          |  TODO
 left_cyl          | TODO
 left_axis         | TODO
 left_add          | TODO

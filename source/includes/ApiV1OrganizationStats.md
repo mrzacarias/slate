@@ -25,16 +25,6 @@
 
 List of **Organization Stats** of the requester organization, as visits, customers and test results counts.
 
-### Structure
-
-Field             | Description
------------------ | -------------------------------------------------------------------------------
-id                | The object ID
-test_results      | TODO
-visits            | TODO
-customers         | TODO
-graph_readings    | TODO
-
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
 </aside>

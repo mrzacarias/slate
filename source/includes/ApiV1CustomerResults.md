@@ -6,8 +6,6 @@
 {
   "customer_result": {
     "id": "00000000-0000-0000-0000-000000000000",
-    "created_at": "2016-06-20T19:51:41.963Z",
-    "updated_at": "2016-06-20T19:51:42.115Z",
     "status": "completed",
     "decision": "prescribed",
     "decision_note": "This is the decision note of the Magic Prescribed Customer!",
@@ -29,42 +27,14 @@
     "prescribing_od_id": 5,
     "customer_relationship_ids": [5],
     "test_result_ids": ["..."],
+    "created_at": "2016-06-20T19:51:41.963Z",
+    "updated_at": "2016-06-20T19:51:42.115Z",
     "organization_id": 1
   }
 }
 ````
 
 These are the **Customer Results** after his assigned OD had a decision based on the customer's test results. It's used to build the customer results page, where the customer can print his prescription and use it to order new glasses.
-
-### Structure
-
-Field               | Description
-------------------- | -----------------------------------------------------------------------------
-id                  | The Visit UUID
-status              | TODO
-decision            | TODO
-decision_note       | TODO
-internal_note       | TODO
-customer_id         | TODO
-test_confidence     | TODO
-distance_preference | TODO
-near_preference     | TODO
-predisposition      | TODO
-uuid                | TODO
-prescription_id     | TODO
-intake_form_id      | TODO
-appointment_id      | TODO
-contacts_id         | TODO
-screening_id        | TODO
-netra_id            | TODO
-netrometer_id       | TODO
-visit_note_ids      | TODO
-prescribing_od_id   | TODO
-customer_relationship_ids         | TODO
-test_result_ids     | TODO
-organization_id     | TODO
-created_at          | TODO
-updated_at          | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

@@ -25,18 +25,6 @@
 
 List of **Emails** sent to the customer of a specific visit.
 
-### Structure
-
-Field            | Description
----------------- | -------------------------------------------------------------------------------
-id               | The object ID
-template_name    | TODO
-template_content | TODO
-visit_id         | TODO
-status           | TODO
-created_at       | TODO
-updated_at       | TODO
-
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
 </aside>

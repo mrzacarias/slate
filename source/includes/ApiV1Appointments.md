@@ -20,7 +20,7 @@
 
 **Appointments** are structures containing the appointment data of visits scheduled by patients at the book visit page.
 
-#### Structure
+### Structure
 
 Field           | Description
 --------------- | -------------------------------------------------------------------------------

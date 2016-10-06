@@ -1,33 +1,16 @@
 # Basic Authentication
 
-#### Authenticated Requests
-
 All API requests requiring authentication must have an authorization header with a valid API token.
 
-Header:
+> Authorization Header
 
 ````
 Authorization: Token token="123456......abcdef"
 ````
 
------
-
 ## Login
 
-````
-POST /api/v1/login
-````
-
-* email
-* password
-
-### Example Request
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/login
-````
-
-Parameters: you provide request parameters as JSON in your request's body
+> Request Body
 
 ````
 {
@@ -36,7 +19,7 @@ Parameters: you provide request parameters as JSON in your request's body
 }
 ````
 
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/login
 
 ````
 {
@@ -63,32 +46,42 @@ Parameters: you provide request parameters as JSON in your request's body
 }
 ````
 
------
+The API Login uses email and password to generate a token. The request also returns the user and organization information.
+
+### HTTP Request
+
+`POST /api/v1/login`
+
+### Body Parameters
+
+Parameter       | Description
+--------------- | -------------------------------------------------------------------------------
+email           | The email used on the sign up
+password        | Password (8 or more characters, at least 1 number)
+
 
 ## Logout
 
-````
-DELETE /api/v1/logout
-````
+The API logout is a DELETE request. The API will use the token on the authorization header to do the log off logic. 
 
-* token
-
-### Example Request
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/logout
-````
-
-Header:
+> Authorization Header
 
 ````
 Authorization: Token token="123456......abcdef"
 ````
 
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/logout
 
 ````
 {
   "info": "Success"
 }
 ````
+
+### HTTP Request
+
+`DELETE /api/v1/logout`
+
+### Body Parameters
+
+None

@@ -11,12 +11,14 @@ toc_footers:
 
 includes:
  - ApiV1BasicAuthentication.md
+ - ApiV1CustomerAuthentication.md
 
  - ApiV1Appointments.md
  - ApiV1Binoculars.md
  - ApiV1BookVisit.md
  - ApiV1CustomerRelationships.md
  - ApiV1Customers.md
+ - ApiV1CustomerResults.md
  - ApiV1Emails.md
  - ApiV1HealthCheck.md
  - ApiV1Instruments.md
@@ -31,9 +33,6 @@ includes:
  - ApiV1TestResults.md
  - ApiV1Users.md
  - ApiV1Visits.md
-
- - ApiV1CustomerAuthentication.md
- - ApiV1CustomerResults.md
 
 search: true
 ---

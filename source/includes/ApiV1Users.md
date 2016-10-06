@@ -2,19 +2,22 @@
 
 **Users** can be created, updated, deleted and shown on the insight database. Each one can have or not a role and will belong to a single organization. ODs and Admins can administrate the users.
 
-#### Structure
- * id
- * first_name
- * last_name
- * email
- * signature
- * title
- * license_number
- * license_state
- * npi
- * created_at
- * updated_at
- * role_ids
+### Structure
+
+Field             | Description
+----------------- | -------------------------------------------------------------------------------
+id                | The Appointment object ID
+first_name        | TODO
+last_name         | TODO
+email             | TODO
+signature         | TODO
+title             | TODO
+license_number    | TODO
+license_state     | TODO
+npi               | TODO
+created_at        | TODO
+updated_at        | TODO
+role_ids          | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

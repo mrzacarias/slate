@@ -2,11 +2,13 @@
 
 **Search** is the endpoint to make general queries that will return customers, readings and visits related to the term passed as argument.
 
-#### Structure
+### Structure
 
-* customers
-* readings
-* visits
+Field             | Description
+----------------- | -------------------------------------------------------------------------------
+customers         | TODO
+readings          | TODO
+visits            | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
@@ -35,8 +37,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
       "updated_at": "2016-06-20T22:11:07.811Z",
       "birthdate": "1950-01-01",
       "organization_id": 1
-    },
-    {...}
+    }
   ],
   "readings": [],
   "visits": [
@@ -60,8 +61,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
       "organization_id": 1,
       "netrometer_id": null,
       "prescribing_od_id": 5
-    },
-    {...}
+    }
   ]
 }
 ````

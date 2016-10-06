@@ -2,19 +2,21 @@
 
 These endpoints returns Eyenetra's **Customers** personal information as list or specific instance. The **"Select New Customer"** endpoint, though, is responsible to create an [customer relationship](ApiV1CustomerRelationships) between the current OD and the next new customer in line.
 
-#### Structure
+### Structure
 
-* id
-* first_name
-* last_name
-* email
-* phone
-* address
-* city
-* state
-* zip_code
-* created_at
-* updated_at
+Field           | Description
+--------------- | -------------------------------------------------------------------------------
+id              | The Appointment object ID
+first_name      | TODO
+last_name       | TODO
+email           | TODO
+phone           | TODO
+address         | TODO
+city            | TODO
+state           | TODO
+zip_code        | TODO
+created_at      | TODO
+updated_at      | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

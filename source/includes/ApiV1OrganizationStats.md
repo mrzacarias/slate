@@ -2,33 +2,15 @@
 
 List of **Organization Stats** of the requester organization, as visits, customers and test results counts.
 
-#### Structure
+### Structure
 
- * test_results
-   * count
-   * netrometer
-   * netra
-   * custom
- * visits
-   * count
-   * incomplete
-   * completed
-   * new
- * customers
-   * count
-   * prescribed
-   * passed
-   * referred
- * graph_readings
-   * by_year
-   * netra_by_year
-   * netrometer_by_year
-   * by_month
-   * netra_by_month
-   * netrometer_by_month
-   * by_day
-   * netra_by_day
-   * netrometer_by_day
+Field             | Description
+----------------- | -------------------------------------------------------------------------------
+id                | The Appointment object ID
+test_results      | TODO
+visits            | TODO
+customers         | TODO
+graph_readings    | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

@@ -2,26 +2,28 @@
 
 A _**Visit**_ represents a single interaction between a customer and us. Visits are the primary workflow element for ODs and CSRs in our model. With a visit, you can get to a customer, a prescription, and payments.
 
-#### Structure
+### Structure
 
- * id
- * customer_id
- * created_at
- * updated_at
- * status
- * decision
- * decision_note
- * test_confidence
- * distance_preference
- * near_preference
- * screening_id
- * netra_id
- * predisposition
- * uuid
- * contacts_id
- * internal_note
- * organization_id
- * netrometer_id
+Field               | Description
+------------------- | -----------------------------------------------------------------------------
+id                  | The Appointment object ID
+customer_id         | TODO
+created_at          | TODO
+updated_at          | TODO
+status              | TODO
+decision            | TODO
+decision_note       | TODO
+test_confidence     | TODO
+distance_preference | TODO
+near_preference     | TODO
+screening_id        | TODO
+netra_id            | TODO
+predisposition      | TODO
+uuid                | TODO
+contacts_id         | TODO
+internal_note       | TODO
+organization_id     | TODO
+netrometer_id       | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
@@ -61,8 +63,7 @@ Obs.: To CSV exported data, add .csv as the format.
       "internal_note": null,
       "organization_id": 1,
       "netrometer_id": null
-    },
-    {...}
+    }
     {
       "id": 110,
       "customer_id": 110,

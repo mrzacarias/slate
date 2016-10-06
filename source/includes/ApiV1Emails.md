@@ -2,20 +2,17 @@
 
 List of **Emails** sent to the customer of a specific visit.
 
-#### Structure
+### Structure
 
- * id
- * template_name
- * template_content
-   * email
-   * name
-   * vars
-     * first_name
-     * link
- * visit_id
- * status
- * created_at
- * updated_at
+Field            | Description
+---------------- | -------------------------------------------------------------------------------
+id               | The Appointment object ID
+template_name    | TODO
+template_content | TODO
+visit_id         | TODO
+status           | TODO
+created_at       | TODO
+updated_at       | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

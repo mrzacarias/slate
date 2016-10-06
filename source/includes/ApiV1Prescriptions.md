@@ -2,21 +2,23 @@
 
 If the OD decided to create a **Prescription**, an instance is created and saved on the database. Is also possible for the OD to update the visit.
 
-#### Structure
+### Structure
 
- * id
- * left_sph
- * left_cyl
- * left_axis
- * left_add
- * right_sph
- * right_cyl
- * right_axis
- * right_add
- * pd
- * near_pd
- * recommended_use
- * prescribing_od_id
+Field             | Description
+----------------- | -------------------------------------------------------------------------------
+id                | The Appointment object ID
+left_sph          | TODO
+left_cyl          | TODO
+left_axis         | TODO
+left_add          | TODO
+right_sph         | TODO
+right_cyl         | TODO
+right_axis        | TODO
+right_add         | TODO
+pd                | TODO
+near_pd           | TODO
+recommended_use   | TODO
+prescribing_od_id | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

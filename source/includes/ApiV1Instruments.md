@@ -2,12 +2,14 @@
 
 **Instruments** are structures containing the organization devices information. For EyeNetra devices, the information about each instrument (id, type, etc.) is saved/updated after every new test result finished and uploaded.
 
-#### Structure
+### Structure
 
-* id
-* instrument_id
-* instrument_type
-* test_result_ids
+Field            | Description
+---------------- | -------------------------------------------------------------------------------
+id               | The Appointment object ID
+instrument_id    | TODO
+instrument_type  | TODO
+test_result_ids  | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

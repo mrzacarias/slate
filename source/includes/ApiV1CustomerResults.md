@@ -2,22 +2,24 @@
 
 These are the **Customer Results** after his assigned OD had a decision based on the customer's test results. It's used to build the customer results page, where the customer can print his prescription and use it to order new glasses.
 
-#### Structure
+### Structure
 
- * id
- * left_cyl
- * left_add
- * left_prism
- * left_sph
- * right_cyl
- * right_add
- * right_prism
- * right_sph
- * pd
- * near_pd
- * note
- * uuid
- * recommended_use
+Field           | Description
+--------------- | -------------------------------------------------------------------------------
+id              | The Appointment object ID
+left_cyl        | TODO
+left_add        | TODO
+left_prism      | TODO
+left_sph        | TODO
+right_cyl       | TODO
+right_add       | TODO
+right_prism     | TODO
+right_sph       | TODO
+pd              | TODO
+near_pd         | TODO
+note            | TODO
+uuid            | TODO
+recommended_use | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

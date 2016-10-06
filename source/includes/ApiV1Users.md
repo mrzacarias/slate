@@ -80,13 +80,13 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 `GET /api/v1/users`
 
-## Filtering, Searching and Sorting
 
 ### Filters
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/users?email=johndoe@email.com
+`GET  /api/v1/users?email=johndoe@email.com`
 
 The following columns are available for filtering: 
+
 * first_name
 * last_name
 * email
@@ -99,9 +99,10 @@ The following columns are available for filtering:
 
 ### Searching
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/users?q=John
+`GET  /api/v1/users?q=John`
 
 You can use the param "q" (for query) to set a string that will be used to search alike entries (case insensitive, using SQL "LIKE" command) on the following columns:
+
 * first_name
 * last_name
 * email
@@ -111,11 +112,11 @@ You can use the param "q" (for query) to set a string that will be used to searc
 
 ### Sorting
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/users?sort=npi
+`GET  /api/v1/users?sort=npi`
 
 The same columns used for filtering can be used for sorting. To sort your request, you pass the column name on the parameter "sort":
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/users?sort=-npi
+`GET  /api/v1/users?sort=-npi`
 
 The default order when passing a parameter is ascending, you can change for descending passing a "-" before the column name:
 
@@ -123,7 +124,7 @@ The default sort for requests is "-updated_at".
 
 ### "Since" parameters
 
-> https://dev-portal-api.eyenetra.com:7443/api/v1/users?q=john&sort=-email&updated_since="01-01-2016"
+`GET  /api/v1/users?q=john&sort=-email&updated_since="01-01-2016"`
 
 You can also set "updated_since" or "created_since" parameters, specifying a bottom limit date or date/time to your requests
 

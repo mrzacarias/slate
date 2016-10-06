@@ -24,7 +24,7 @@
 
 Field           | Description
 --------------- | -------------------------------------------------------------------------------
-id              | The Appointment object ID
+id              | The object ID
 title           | Short description/note to help to identify the appointment
 start           | Date and Hour when the appointment will start
 end             | Date and Hour when the appointment will end
@@ -111,4 +111,4 @@ The show request will return the appointment for the ID passed as parameter.
 
 Parameter       | Description
 --------------- | -------------------------------------------------------------------------------
-id              | The Appointment object ID
+id              | The object ID

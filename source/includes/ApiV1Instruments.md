@@ -1,12 +1,28 @@
 # Instruments
 
+> Instrument Structure Example
+
+````
+{
+  "instrument": {
+    "id": 1,
+    "instrument_id": 406,
+    "instrument_type": "Netra",
+    "organization_id": 1,
+    "test_result_ids": ["..."],
+    "created_at": "2016-06-20T20:02:35.687Z",
+    "updated_at": "2016-06-20T20:02:35.687Z"
+  }
+}
+````
+
 **Instruments** are structures containing the organization devices information. For EyeNetra devices, the information about each instrument (id, type, etc.) is saved/updated after every new test result finished and uploaded.
 
 ### Structure
 
 Field            | Description
 ---------------- | -------------------------------------------------------------------------------
-id               | The Appointment object ID
+id               | The object ID
 instrument_id    | TODO
 instrument_type  | TODO
 test_result_ids  | TODO

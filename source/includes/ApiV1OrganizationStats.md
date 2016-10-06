@@ -1,12 +1,35 @@
 # Organization Stats
 
+> Organization Stats Structure Example
+
+````
+{
+  "organization_stats": {
+    "test_results": {"...":"..."},
+    "visits": {"...":"..."},
+    "customers": {"...":"..."},
+    "graph_readings": {
+      "by_year": {"...":"..."},
+      "netra_by_year": {"...":"..."},
+      "netrometer_by_year": {"...":"..."},
+      "by_month": {"...":"..."},
+      "netra_by_month": {"...":"..."},
+      "netrometer_by_month": {"...":"..."},
+      "by_day": {"...":"..."},
+      "netra_by_day": {"...":"..."},
+      "netrometer_by_day": {"...":"..."}
+    }
+  }
+}
+````
+
 List of **Organization Stats** of the requester organization, as visits, customers and test results counts.
 
 ### Structure
 
 Field             | Description
 ----------------- | -------------------------------------------------------------------------------
-id                | The Appointment object ID
+id                | The object ID
 test_results      | TODO
 visits            | TODO
 customers         | TODO

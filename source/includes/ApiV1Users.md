@@ -1,12 +1,32 @@
 # Users
 
+> User Structure Example
+
+````
+{
+  "user": {
+    "id": 1,
+    "first_name": "user",
+    "last_name": "user",
+    "email": "user@eyenetra.com",
+    "signature": null,
+    "title": null,
+    "license_number": null,
+    "license_state": null,
+    "npi": null,
+    "created_at": "2015-11-13T15:36:55.625Z",
+    "role_ids": []
+  }
+}
+````
+
 **Users** can be created, updated, deleted and shown on the insight database. Each one can have or not a role and will belong to a single organization. ODs and Admins can administrate the users.
 
 ### Structure
 
 Field             | Description
 ----------------- | -------------------------------------------------------------------------------
-id                | The Appointment object ID
+id                | The object ID
 first_name        | TODO
 last_name         | TODO
 email             | TODO

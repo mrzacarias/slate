@@ -21,7 +21,7 @@
 
 Field           | Description
 --------------- | -------------------------------------------------------------------------------
-id              | The Binocular object ID
+id              | The object ID
 pd              | Binocular PD
 va              | Binocular Visual Acuity
 right_eye_id    | Right Eye Monocular ID

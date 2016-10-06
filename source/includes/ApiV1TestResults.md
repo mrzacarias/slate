@@ -1,6 +1,62 @@
 # Test Results
 
+> Test Result Structure Example
+
+````
+{
+  "test_result": {
+    "id": 1,
+    "longitude": null,
+    "latitude": null,
+    "uuid": null,
+    "exam_date": null,
+    "created_at": "2015-11-13T16:27:21.466Z",
+    "updated_at": "2015-11-13T16:27:21.466Z",
+    "distance_eyewear": "Constant wear glasses",
+    "near_eyewear": "Constant wear glasses",
+    "test_method": "Screening",
+    "right_image_id_1": null,
+    "right_image_id_2": null,
+    "right_image_id_3": null,
+    "left_image_id_1": null,
+    "left_image_id_2": null,
+    "left_image_id_3": null,
+    "device_id": null,
+    "app_version": null,
+    "distance_binocular_id": 1,
+    "near_binocular_id": 2,
+    "notes": "This is the tag"
+  }
+}
+````
+
 The **Test Results** are the logic structure used to save the readings from Netra and Netrometer devices and, also, the customer's screening and contacts information.
+
+### Structure
+
+Field             | Description
+----------------- | -------------------------------------------------------------------------------
+id                | TODO
+longitude         | TODO
+latitude          | TODO
+uuid              | TODO
+exam_date         | TODO
+distance_eyewear  | TODO
+near_eyewear      | TODO
+test_method       | TODO
+right_image_id_1  | TODO
+right_image_id_2  | TODO
+right_image_id_3  | TODO
+left_image_id_1   | TODO
+left_image_id_2   | TODO
+left_image_id_3   | TODO
+device_id         | TODO
+app_version       | TODO
+distance_binocular_id | TODO
+near_binocular_id | TODO
+notes             | TODO
+created_at        | TODO
+updated_at        | TODO
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.

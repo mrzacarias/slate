@@ -1,12 +1,41 @@
 # Intake Forms
 
+> Intake Form Structure Example
+
+````
+{
+  "intake_form": {
+    "id": 1,
+    "is_driver": true,
+    "eye_brain_surgery": false,
+    "terms_accepted_on": "2016-06-18",
+    "occupation": "CandlestickMaker",
+    "prescriptions": "Zylitol",
+    "inches_from_screen": 9,
+    "last_eye_exam": "6 months ago",
+    "visit_id": 1,
+    "eye_symptoms": [],
+    "age_glasses": null,
+    "requested_eyewear": ["Bifocals","Progressives"],
+    "health_conditions": [],
+    "current_eyewear": [],
+    "reasons_for_visit_eyewear": {},
+    "has_driving_vision_trouble": null,
+    "vision_insurance": null,
+    "hear_about_us": null,
+    "how_wear_glasses": null,
+    "additional_info": null
+  }
+}
+````
+
 **Intake Forms** information of visits uploaded via TeleRx flow.
 
 ### Structure
 
 Field             | Description
 ----------------- | -------------------------------------------------------------------------------
-id                | The Appointment object ID
+id                | The object ID
 is_driver         | TODO
 eye_brain_surgery | TODO
 terms_accepted_on | TODO

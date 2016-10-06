@@ -1,5 +1,15 @@
 # Search
 
+> Search result Structure Example
+
+````
+{
+  "customers": ["..."],
+  "readings": ["..."],
+  "visits": ["..."]
+}
+````
+
 **Search** is the endpoint to make general queries that will return customers, readings and visits related to the term passed as argument.
 
 ### Structure

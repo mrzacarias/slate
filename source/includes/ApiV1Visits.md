@@ -1,12 +1,42 @@
 # Visits
 
+> Visit Structure Example
+
+````
+{
+  "visit": {
+    "id": 1,
+    "created_at": "2015-11-13T15:36:56.907Z",
+    "updated_at": "2015-11-13T15:36:56.907Z",
+    "status": "incomplete",
+    "decision": null,
+    "decision_note": null,
+    "internal_note": null,
+    "customer_id": 2,
+    "test_confidence": null,
+    "distance_preference": null,
+    "near_preference": null,
+    "predisposition": null,
+    "uuid": "77bb7235-90e6-4c2a-bf30-fe5e27e60731",
+    "prescription_id": null,
+    "intake_form_id": 1,
+    "contacts_id": null,
+    "screening_id": null,
+    "netra_id": null,
+    "visit_note_ids": [],
+    "prescribing_od_id": null,
+    "customer_relationship_ids": [5]
+  }
+}
+````
+
 A _**Visit**_ represents a single interaction between a customer and us. Visits are the primary workflow element for ODs and CSRs in our model. With a visit, you can get to a customer, a prescription, and payments.
 
 ### Structure
 
 Field               | Description
 ------------------- | -----------------------------------------------------------------------------
-id                  | The Appointment object ID
+id                  | The object ID
 customer_id         | TODO
 created_at          | TODO
 updated_at          | TODO

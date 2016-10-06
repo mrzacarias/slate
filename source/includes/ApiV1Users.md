@@ -16,25 +16,17 @@
  * updated_at
  * role_ids
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
-------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## List
 
-````
-GET /api/v1/users
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/users`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/users
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users
 
 ````
 {
@@ -71,7 +63,11 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/users
 }
 ````
 
+## Filtering, Searching and Sorting
+
 ### Filters
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users?email=johndoe@email.com
 
 The following columns are available for filtering: 
 * first_name
@@ -85,11 +81,9 @@ The following columns are available for filtering:
 * created_at
 * updated_at
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/users?email=johndoe@email.com
-````
-
 ### Searching
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users?q=John
 
 You can use the param "q" (for query) to set a string that will be used to search alike entries (case insensitive, using SQL "LIKE" command) on the following columns:
 * first_name
@@ -99,49 +93,31 @@ You can use the param "q" (for query) to set a string that will be used to searc
 * license_state
 * npi
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/users?q=John
-````
-
 ### Sorting
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users?sort=npi
 
 The same columns used for filtering can be used for sorting. To sort your request, you pass the column name on the parameter "sort":
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/users?sort=npi
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users?sort=-npi
 
 The default order when passing a parameter is ascending, you can change for descending passing a "-" before the column name:
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/users?sort=-npi
-````
 
 The default sort for requests is "-updated_at".
 
 ### "Since" parameters
 
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users?q=john&sort=-email&updated_since="01-01-2016"
+
 You can also set "updated_since" or "created_since" parameters, specifying a bottom limit date or date/time to your requests
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/users?q=john&sort=-email&updated_since="01-01-2016"
-````
-
-------
 
 ## Show
 
-````
-GET /api/v1/users/{id}
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/users/{id}`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/users/2
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users/2
 
 ````
 {
@@ -161,15 +137,13 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/users/2
 }
 ````
 
-------
-
 ## Create
 
-````
-POST /api/v1/users
-````
+### HTTP Request
 
-### Example Request
+`POST /api/v1/users`
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users/
 
 ````
 {
@@ -182,8 +156,6 @@ POST /api/v1/users
 }
 ````
 
-### Example Response
-
 ````
 {
   "user": {
@@ -202,15 +174,13 @@ POST /api/v1/users
 }
 ````
 
-------
-
 ## Update
 
-````
-PUT /api/v1/users/{id}
-````
+### HTTP Request
 
-### Example Request
+`PUT /api/v1/users/{id}`
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users/
 
 ````
 {
@@ -223,8 +193,6 @@ PUT /api/v1/users/{id}
 }
 ````
 
-### Example Response
-
 ````
 {
   "user": {
@@ -243,21 +211,13 @@ PUT /api/v1/users/{id}
 }
 ````
 
-------
-
 ## Delete
 
-````
-DELETE /api/v1/users/{id}
-````
+### HTTP Request
 
-### Example Request
+`DELETE /api/v1/users/{id}`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/users/2
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/users/2
 
 ````
 {

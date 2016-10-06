@@ -12,27 +12,19 @@
 * created_at
 * updated_at
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## Select New Customer
 
-````
-GET /api/v1/select_new_customer
-````
+### HTTP Request
+
+`GET /api/v1/select_new_customer`
 
 Note: user must be an OD, else the response will be 403 Forbidden
 
-### Example Request
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/select_new_customer
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/select_new_customer
 
 ````
 {

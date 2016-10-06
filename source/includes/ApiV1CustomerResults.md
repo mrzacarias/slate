@@ -19,27 +19,19 @@ These are the **Customer Results** after his assigned OD had a decision based on
  * uuid
  * recommended_use
 
-#### Authentication
-
-All requests require [customer authentication](ApiV1CustomerAuthentication).
-
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## Show
 
-````
-GET /api/v1/customer_results/<uuid>
-````
+### HTTP Request
+
+`GET /api/v1/customer_results/<uuid>`
 
 Note: if the uuid is not valid (no customer with a prescription with this uuid is found), a 404 status is returned.
 
-### Example Request
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/customer_results/00000000-0000-0000-0000-000000000000
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/customer_results/00000000-0000-0000-0000-000000000000
 
 ````
 {

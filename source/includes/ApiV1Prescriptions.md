@@ -18,25 +18,17 @@ If the OD decided to create a **Prescription**, an instance is created and saved
  * recommended_use
  * prescribing_od_id
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## Show
 
-````
-GET /api/v1/prescriptions/{:id}
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/prescriptions/{:id}`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions/1
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions/1
 
 ````
 {
@@ -58,19 +50,15 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions/1
 }
 ````
 
------
-
 ## Create
 
-````
-POST /api/v1/prescriptions
-````
+### HTTP Request
 
-### Example Request
+`POST /api/v1/prescriptions`
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions
 
 ````
-https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions
-
 {
   "left_sph":"0.25",
   "recommended_use":"Near",
@@ -78,8 +66,6 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions
   "visit_id":221
 }
 ````
-
-### Example Response
 
 ````
 {
@@ -102,19 +88,15 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions
 }
 ````
 
------
-
 ## Update
 
-````
-PUT /api/v1/prescriptions
-````
+### HTTP Request
 
-### Example Request
+`PUT /api/v1/prescriptions`
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions
 
 ````
-https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions
-
 {
   "left_sph":"0.25",
   "recommended_use":"Near",
@@ -122,8 +104,6 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/prescriptions
   "visit_id":221
 }
 ````
-
-### Example Response
 
 ````
 {

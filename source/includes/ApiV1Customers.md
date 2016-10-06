@@ -16,27 +16,19 @@ These endpoints returns Eyenetra's **Customers** personal information as list or
 * created_at
 * updated_at
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## List
 
-````
-GET /api/v1/customers
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/customers`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/customers?decision=prescribed
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/customers?decision=prescribed
 
 Obs.: To CSV exported data, add .csv as the format.
-
-### Example Response
 
 ````
 {
@@ -70,7 +62,11 @@ Obs.: To CSV exported data, add .csv as the format.
 }
 ````
 
+## Filtering, Searching and Sorting
+
 ### Filters
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/customers?email=johndoe@email.com
 
 The following columns are available for filtering: 
 * decision - Only for customers with visits, valid decisions: none, passed, prescribed, referred
@@ -85,11 +81,9 @@ The following columns are available for filtering:
 * created_at
 * updated_at
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/customers?email=johndoe@email.com
-````
-
 ### Searching
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/customers?q=John
 
 You can use the param "q" (for query) to set a string that will be used to search alike entries (case insensitive, using SQL "LIKE" command) on the following columns:
 * first_name
@@ -101,42 +95,29 @@ You can use the param "q" (for query) to set a string that will be used to searc
 * state
 * zip_code
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/customers?q=John
-````
-
 ### Sorting
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/customers?sort=first_name
 
 The same columns used for filtering can be used for sorting. To sort your request, you pass the column name on the parameter "sort":
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/customers?sort=first_name
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/customers?sort=-first_name
 
 The default order when passing a parameter is ascending, you can change for descending passing a "-" before the column name:
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/customers?sort=-first_name
-````
 
 The default sort for requests is "-updated_at".
 
 ### "Since" parameters
 
+> https://dev-portal-api.eyenetra.com:7443/api/v1/customers?q=john&sort=-email&updated_since="01-01-2016"
+
 You can also set "updated_since" or "created_since" parameters, specifying a bottom limit date or date/time to your requests
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/customers?q=john&sort=-email&updated_since="01-01-2016"
-````
-
-
------
 
 ## Show
 
-````
-GET /api/v1/customers/<id>
-````
+### HTTP Request
+
+`GET /api/v1/customers/<id>`
 
 Note: user must be at least a CSR or in the case of an OD, have a relationship with the customer, else the response will be 403 Forbidden
 
@@ -154,15 +135,9 @@ The following fields are included only if CSR or Admin level access:
 * state
 * zip_code
 
-### Example Request
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/customers/5
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/customers/5
 
 Obs.: To CSV exported data, add .csv as the format.
-
-### Example Response
 
 ````
 {
@@ -184,13 +159,9 @@ Obs.: To CSV exported data, add .csv as the format.
 }
 ````
 
------
-
 ## Select New Customer
 
-````
-GET /api/v1/select_new_customer
-````
+`GET /api/v1/select_new_customer`
 
 Note: user must be an OD, else the response will be 403 Forbidden
 
@@ -202,13 +173,7 @@ Note: user must be an OD, else the response will be 403 Forbidden
 * created_at
 * updated_at
 
-### Example Request
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/select_new_customer
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/select_new_customer
 
 ````
 {

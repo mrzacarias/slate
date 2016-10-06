@@ -34,7 +34,7 @@ va              | Monocular Visual Acuity
 pd              | Monocular PD
 confidence      | Confidence of this monocular
 
-<aside class="success">
+<aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
 </aside>
 

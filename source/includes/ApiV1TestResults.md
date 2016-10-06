@@ -2,27 +2,17 @@
 
 The **Test Results** are the logic structure used to save the readings from Netra and Netrometer devices and, also, the customer's screening and contacts information.
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## List
 
-````
-GET /api/v1/test_results/
-````
+`GET /api/v1/test_results/`
 
-### Example Request
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/test_results
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/test_results
 
 Obs.: To CSV exported data, add .csv as the format.
-
-### Example Response
 
 ````
 {
@@ -58,7 +48,11 @@ Obs.: To CSV exported data, add .csv as the format.
 }
 ````
 
+## Filtering, Searching and Sorting
+
 ### Filters
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/test_results?test_method=Netrometer
 
 The following columns are available for filtering: 
 * test_method
@@ -74,11 +68,9 @@ The following columns are available for filtering:
 * created_at
 * updated_at
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/test_results?test_method=Netrometer
-````
-
 ### Searching
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/test_results?q=netra
 
 You can use the param "q" (for query) to set a string that will be used to search alike entries (case insensitive, using SQL "LIKE" command) on the following columns:
 * test_method
@@ -90,51 +82,33 @@ You can use the param "q" (for query) to set a string that will be used to searc
 * app_version
 * notes (TAG)
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/test_results?q=netra
-````
-
 ### Sorting
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/test_results?sort=app_version
 
 The same columns used for filtering can be used for sorting. To sort your request, you pass the column name on the parameter "sort":
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/test_results?sort=app_version
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/test_results?sort=-app_version
 
 The default order when passing a parameter is ascending, you can change for descending passing a "-" before the column name:
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/test_results?sort=-app_version
-````
 
 The default sort for requests is "-updated_at".
 
 ### "Since" parameters
 
+> https://dev-portal-api.eyenetra.com:7443/api/v1/test_results?q=netra&sort=-uuid&updated_since="01-01-2016"
+
 You can also set "updated_since" or "created_since" parameters, specifying a bottom limit date or date/time to your requests
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/test_results?q=netra&sort=-uuid&updated_since="01-01-2016"
-````
-
------
 
 ## Show
 
-````
-GET /api/v1/test_results/{:test_result_id}
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/test_results/{:test_result_id}`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/test_results/1
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/test_results/1
 
 Obs.: To CSV exported data, add .csv as the format.
-
-### Example Response
 
 ````
 {

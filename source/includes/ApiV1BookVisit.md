@@ -2,25 +2,17 @@
 
 The **Book Visit** endpoint is responsible to save all the data acquired during a complete visit (readings, customer information, etc.) on the insight database.
 
-#### Authentication
-
-Not required.
-
------
+<aside class="warn">
+Do not require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## Create
   
-````
-POST /api/v1/book_visit
-````
+### HTTP Request
 
-### Example Request
+`POST /api/v1/book_visit`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/book_visit
-````
-
-### Body
+> https://dev-portal-api.eyenetra.com:7443/api/v1/book_visit
 
 ````
 {
@@ -63,8 +55,6 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/book_visit
   }
 }
 ````
-
-### Example Response
 
 ````
 {

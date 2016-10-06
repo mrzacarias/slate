@@ -2,23 +2,17 @@
 
 The **Readings Import** endpoint is used to save readings directly to insight database, without the necessity of a TeleRx flow import. It's used to save the stand-alone, tabletless version of Netra and for Netrometer readings.
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## Create
 
-````
-POST /api/v1/readings_import/
-````
+### HTTP Request
 
-### Example Request
+`POST /api/v1/readings_import/`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/readings_import/
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/readings_import/
 
 ````
 {
@@ -74,8 +68,6 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/readings_import/
   }
 }
 ````
-
-### Example Response
 
 ````
 {

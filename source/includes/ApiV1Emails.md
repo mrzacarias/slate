@@ -18,25 +18,15 @@ List of **Emails** sent to the customer of a specific visit.
  * updated_at
 
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## Filtered List
 
-````
-GET /api/v1/emails?visit_id=[visit id]
-````
+`GET /api/v1/emails?visit_id=[visit id]`
 
-### Example Request
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/emails?visit_id=123
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/emails?visit_id=123
 
 ````
 { 

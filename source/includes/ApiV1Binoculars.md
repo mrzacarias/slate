@@ -28,7 +28,7 @@ right_eye_id    | Right Eye Monocular ID
 left_eye_id     | Left Eye Monocular ID
 monoculars      | List of monoculars associated with this binocular
 
-<aside class="success">
+<aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
 </aside>
 

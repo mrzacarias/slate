@@ -2,10 +2,6 @@
 
 **Intake Forms** information of visits uploaded via TeleRx flow.
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
 #### Structure
 
 * id
@@ -26,21 +22,17 @@ All requests require [authentication](ApiV1BasicAuthentication).
 * vision_insurance
 * hear_about_us
 
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## Filtered List
 
-````
-GET /api/v1/intake_forms?filter[customers][email]=customer@mail.com
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/intake_forms?filter[customers][email]=customer@mail.com`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/intake_forms?filter[customers][email]=milk@example.com
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/intake_forms?filter[customers][email]=milk@example.com
 
 ````
 {
@@ -99,21 +91,14 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/intake_forms?filter[customers][e
   ]
 }
 ````
------
 
 ## Show
 
-````
-GET /api/v1/intake_forms/{:intake_form_id}
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/intake_forms/{:intake_form_id}`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/intake_forms/58
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/intake_forms/58
 
 ````
 {

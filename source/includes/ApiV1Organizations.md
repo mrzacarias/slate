@@ -2,25 +2,17 @@
 
 **Organizations** are a logic division inside the Insight portal. All ODs, Admins and other users belongs to one and only organization and can make their actions only with elements (customers, visits, test results, etc.) related to this specific organization.
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## List
 
-````
-GET /api/v1/organizations
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/organizations`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/organizations
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations
 
 ````
 {
@@ -50,21 +42,13 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/organizations
 }
 ````
 
------
-
 ## Show
 
-````
-GET /api/v1/organizations/{:organization_id}
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/organizations/{:organization_id}`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
 
 ````
 {
@@ -77,24 +61,14 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
   }
 }
 ````
-
------
 
 ## Create
 
-````
-POST /api/v1/organizations/
-````
+### HTTP Request
 
-### Example Request
+`POST /api/v1/organizations/`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
-
-payload
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
 
 ````
 {
@@ -107,24 +81,14 @@ payload
   }
 }
 ````
-
------
 
 ## Update
 
-````
-PUT /api/v1/organizations/{:organization_id}
-````
+### HTTP Request
 
-### Example Request
+`PUT /api/v1/organizations/{:organization_id}`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
-
-payload
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
 
 ````
 {
@@ -138,22 +102,13 @@ payload
 }
 ````
 
-
------
-
 ## Delete
 
-````
-GET /api/v1/organizations/{:organization_id}
-````
+### HTTP Request
 
-### Example Request
+`DELETE /api/v1/organizations/{:organization_id}`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/organizations/1
 
 ````
 {

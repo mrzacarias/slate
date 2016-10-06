@@ -30,25 +30,17 @@ List of **Organization Stats** of the requester organization, as visits, custome
    * netra_by_day
    * netrometer_by_day
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## List
 
-````
-GET /api/v1/organization_stats/
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/organization_stats/`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/organization_stats/
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/organization_stats/
 
 ````
 {

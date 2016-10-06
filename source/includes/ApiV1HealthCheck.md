@@ -2,27 +2,19 @@
 
 **Health check** verification without authorization requirement.
 
-#### Authentication
-
-Not required.
-
------
+<aside class="warn">
+Do not require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## Index
 
-````
-GET /api/v1/health_check
-````
+### HTTP Request
+
+`GET /api/v1/health_check`
 
 * version: [semver](http://semver.org) formatted string
 
-### Example Request
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/health_check
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/health_check
 
 ````
 {

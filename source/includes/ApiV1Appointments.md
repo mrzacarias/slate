@@ -34,7 +34,7 @@ created_at      | When this object was created
 updated_at      | Last time this objected was updated
 organization_id | ID of the Organization associated with this element
 
-<aside class="success">
+<aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
 </aside>
 

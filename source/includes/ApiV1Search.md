@@ -8,25 +8,15 @@
 * readings
 * visits
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## Query
 
-````
-GET /api/v1/search?q={query}
-````
+`GET /api/v1/search?q={query}`
 
-### Example Request
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/search?q=test
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/search?q=test
 
 ````
 {

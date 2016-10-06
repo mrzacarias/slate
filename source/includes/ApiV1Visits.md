@@ -23,29 +23,21 @@ A _**Visit**_ represents a single interaction between a customer and us. Visits 
  * organization_id
  * netrometer_id
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
-------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## List
 
-````
-GET /api/v1/visits
-````
+### HTTP Request
+
+`GET /api/v1/visits`
 
 Get a list of visits. 
 
-### Example Request
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/visits
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/visits
 
 Obs.: To CSV exported data, add .csv as the format.
-
-### Example Response
 
 ````
 {
@@ -106,7 +98,11 @@ Obs.: To CSV exported data, add .csv as the format.
 }
 ````
 
+## Filtering, Searching and Sorting
+
 ### Filters
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/visits?test_confidence=HIGH
 
 The following columns are available for filtering: 
 * status
@@ -121,11 +117,9 @@ The following columns are available for filtering:
 * created_at
 * updated_at
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/visits?test_confidence=HIGH
-````
-
 ### Searching
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/visits?q=congratulations
 
 You can use the param "q" (for query) to set a string that will be used to search alike entries (case insensitive, using SQL "LIKE" command) on the following columns:
 * status
@@ -137,56 +131,33 @@ You can use the param "q" (for query) to set a string that will be used to searc
 * uuid
 * internal_note
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/visits?q=congratulations
-````
-
 ### Sorting
+
+> https://dev-portal-api.eyenetra.com:7443/api/v1/visits?sort=uuid
 
 The same columns used for filtering can be used for sorting. To sort your request, you pass the column name on the parameter "sort":
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/visits?sort=uuid
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/visits?sort=-uuid
 
 The default order when passing a parameter is ascending, you can change for descending passing a "-" before the column name:
-
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/visits?sort=-uuid
-````
 
 The default sort for requests is "-updated_at".
 
 ### "Since" parameters
 
-You can also set "updated_since" or "created_since" parameters, specifying a bottom limit date or date/time to your requests
+> https://dev-portal-api.eyenetra.com:7443/api/v1/visits?test_confidence=LOW&sort=-uuid&updated_since="01-01-2016"
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/visits?test_confidence=LOW&sort=-uuid&updated_since="01-01-2016"
-````
-------
+You can also set "updated_since" or "created_since" parameters, specifying a bottom limit date or date/time to your requests
 
 ## Show
 
-````
-GET /api/v1/visits/:id
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/visits/:id`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/visits/1
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/visits/1
 
 Obs.: To CSV exported data, add .csv as the format.
-
-### Example Response
-
-Sideloads: 
-  * prescriptions
-  * intake forms
-
-This call presumes you already know about customers, so it does not return a sideload of them.
 
 ````
 {
@@ -216,43 +187,37 @@ This call presumes you already know about customers, so it does not return a sid
 }
 ````
 
-------
-
 ## Update
 
-````
-PATCH /api/v1/visits/:id
-````
+### HTTP Request
+
+`PUT /api/v1/visits/:id`
 
 Update a visit, for example to mark a decision. 
 
-### Example Request
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/visits/1
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/visits/1
 
 ````
 {
-  visit: 
+  "visit": 
     {
-      customer_id: 12, 
-      status: "complete", 
-      decision: "prescribed"
+      "customer_id": 12, 
+      "status": "complete", 
+      "decision": "prescribed"
     }
 }
 ````
 
-### Example Response
-```
+````
 {
-  visit: 
+  "visit": 
     {
-      id: 12, 
-      customer_id: 12, 
-      created_at: 'Fri, 27 Feb 2015 22:18:38 UTC +00:00', 
-      updated_at: 'Fri, 27 Feb 2015 22:18:38 UTC +00:00', 
-      status: "complete", 
-      decision: "prescribed"
+      "id": 12, 
+      "customer_id": 12, 
+      "created_at": "Fri, 27 Feb 2015 22:18:38 UTC +00:00", 
+      "updated_at": "Fri, 27 Feb 2015 22:18:38 UTC +00:00", 
+      "status": "complete", 
+      "decision": "prescribed"
     }
 }
-```
+````

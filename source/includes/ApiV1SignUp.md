@@ -6,18 +6,13 @@ After a customer bought a Netra product, he needs  to **SignUp** to start using 
 
 For now, not required.
 
------
 ## Create
 
-````
-POST /api/v1/sign_up/
-````
+### HTTP Request
 
-### Example Request
+`POST /api/v1/sign_up/`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/sign_up/
-````
+> https://dev-portal-api.eyenetra.com:7443/api/v1/sign_up/
 
 ````
 {
@@ -34,8 +29,6 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/sign_up/
   }
 }
 ````
-
-### Example Response
 
 ````
 {

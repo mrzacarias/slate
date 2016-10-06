@@ -9,25 +9,17 @@
 * instrument_type
 * test_result_ids
 
-#### Authentication
-
-All requests require [authentication](ApiV1BasicAuthentication).
-
------
+<aside class="warn">
+All requests require <a href="#basic-authentication">authentication</a>.
+</aside>
 
 ## List
 
-````
-GET /api/v1/instruments/
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/instruments/`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/instruments/
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/instruments/
 
 ````
 {
@@ -54,21 +46,13 @@ https://dev-portal-api.eyenetra.com:7443/api/v1/instruments/
 }
 ````
 
------
-
 ## Show
 
-````
-GET /api/v1/instruments/{id}
-````
+### HTTP Request
 
-### Example Request
+`GET /api/v1/instruments/{id}`
 
-````
-https://dev-portal-api.eyenetra.com:7443/api/v1/instruments/1
-````
-
-### Example Response
+> https://dev-portal-api.eyenetra.com:7443/api/v1/instruments/1
 
 ````
 {

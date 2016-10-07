@@ -51,7 +51,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/binoculars/{id}`
+`GET https://insight-api.eyenetra.com/api/v1/binoculars/{id}`
 
 ### Query Parameters
 

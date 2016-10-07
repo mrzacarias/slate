@@ -18,6 +18,6 @@ Do not require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
-`GET /api/v1/health_check`
+`GET https://insight-api.eyenetra.com/api/v1/health_check`
 
 * version: [semver](http://semver.org) formatted string

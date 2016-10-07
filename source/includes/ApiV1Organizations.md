@@ -40,7 +40,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/organizations`
+`GET https://insight-api.eyenetra.com/api/v1/organizations`
 
 ## Show
 
@@ -60,7 +60,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/organizations/{:organization_id}`
+`GET https://insight-api.eyenetra.com/api/v1/organizations/{:organization_id}`
 
 ## Create
 
@@ -80,7 +80,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`POST /api/v1/organizations/`
+`POST https://insight-api.eyenetra.com/api/v1/organizations/`
 
 ## Update
 
@@ -100,4 +100,4 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`PUT /api/v1/organizations/{:organization_id}`
+`PUT https://insight-api.eyenetra.com/api/v1/organizations/{:organization_id}`

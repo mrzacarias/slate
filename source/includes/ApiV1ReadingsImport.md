@@ -76,4 +76,4 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`POST /api/v1/readings_import/`
+`POST https://insight-api.eyenetra.com/api/v1/readings_import/`

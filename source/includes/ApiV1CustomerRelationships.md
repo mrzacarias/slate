@@ -23,6 +23,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/select_new_customer`
+`GET https://insight-api.eyenetra.com/api/v1/select_new_customer`
 
 Note: user must be an OD, else the response will be 403 Forbidden

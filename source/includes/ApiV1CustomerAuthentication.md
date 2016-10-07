@@ -39,7 +39,7 @@ The API Login uses the visit uuid and the customer birthdate to generate a token
 
 ### HTTP Request
 
-`POST /api/v1/customer_login`
+`POST https://insight-api.eyenetra.com/api/v1/customer_login`
 
 ### Body Parameters
 
@@ -69,7 +69,7 @@ Authorization: Token token="123456......abcdef"
 
 ### HTTP Request
 
-`DELETE /api/v1/customer_logout`
+`DELETE https://insight-api.eyenetra.com/api/v1/customer_logout`
 
 ### Body Parameters
 

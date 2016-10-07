@@ -53,7 +53,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/instruments/`
+`GET https://insight-api.eyenetra.com/api/v1/instruments/`
 
 ## Show
 
@@ -75,4 +75,4 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/instruments/{id}`
+`GET https://insight-api.eyenetra.com/api/v1/instruments/{id}`

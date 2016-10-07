@@ -33,7 +33,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/organization_stats/`
+`GET https://insight-api.eyenetra.com/api/v1/organization_stats/`
 
 > Response Example 
 

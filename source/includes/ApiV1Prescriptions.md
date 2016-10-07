@@ -72,7 +72,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/prescriptions/{:id}`
+`GET https://insight-api.eyenetra.com/api/v1/prescriptions/{:id}`
 
 ## Create
 
@@ -112,7 +112,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`POST /api/v1/prescriptions`
+`POST https://insight-api.eyenetra.com/api/v1/prescriptions`
 
 ## Update
 
@@ -152,4 +152,4 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`PUT /api/v1/prescriptions`
+`PUT https://insight-api.eyenetra.com/api/v1/prescriptions`

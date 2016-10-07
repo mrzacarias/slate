@@ -83,5 +83,5 @@ Do not require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`POST /api/v1/sign_up/`
+`POST https://insight-api.eyenetra.com/api/v1/sign_up/`
 

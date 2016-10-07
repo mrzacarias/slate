@@ -75,7 +75,7 @@ The List request will return all the appointments of the current user.
 
 ### HTTP Request
 
-`GET /api/v1/appointments/`
+`GET https://insight-api.eyenetra.com/api/v1/appointments/`
 
 ### Query Parameters
 
@@ -105,7 +105,7 @@ The show request will return the appointment for the ID passed as parameter.
 ````
 ### HTTP Request
 
-`GET /api/v1/appointments/{id}`
+`GET https://insight-api.eyenetra.com/api/v1/appointments/{id}`
 
 ### Query Parameters
 

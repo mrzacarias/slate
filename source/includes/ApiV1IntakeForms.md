@@ -98,7 +98,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/intake_forms?filter[customers][email]=customer@mail.com`
+`GET https://insight-api.eyenetra.com/api/v1/intake_forms?filter[customers][email]=customer@mail.com`
 
 
 ## Show
@@ -134,5 +134,5 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/intake_forms/{:intake_form_id}`
+`GET https://insight-api.eyenetra.com/api/v1/intake_forms/{:intake_form_id}`
 

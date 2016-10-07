@@ -56,4 +56,4 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
-`GET /api/v1/emails?visit_id=[visit id]`
+`GET https://insight-api.eyenetra.com/api/v1/emails?visit_id=[visit id]`

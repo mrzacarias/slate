@@ -50,7 +50,7 @@ The API Login uses email and password to generate a token. The request also retu
 
 ### HTTP Request
 
-`POST /api/v1/login`
+`POST https://insight-api.eyenetra.com/api/v1/login`
 
 ### Body Parameters
 
@@ -80,7 +80,7 @@ Authorization: Token token="123456......abcdef"
 
 ### HTTP Request
 
-`DELETE /api/v1/logout`
+`DELETE https://insight-api.eyenetra.com/api/v1/logout`
 
 ### Body Parameters
 

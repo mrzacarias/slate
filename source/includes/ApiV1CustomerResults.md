@@ -78,6 +78,6 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/customer_results/<uuid>`
+`GET https://insight-api.eyenetra.com/api/v1/customer_results/<uuid>`
 
 Note: if the uuid is not valid (no customer with a prescription with this uuid is found), a 404 status is returned.

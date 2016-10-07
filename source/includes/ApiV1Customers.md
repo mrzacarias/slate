@@ -82,14 +82,14 @@ All requests require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`GET /api/v1/customers`
+`GET https://insight-api.eyenetra.com/api/v1/customers`
 
 Obs.: To CSV exported data, add .csv as the format.
 
 
 ### Filters
 
-`GET  /api/v1/customers?email=johndoe@email.com`
+`GET  https://insight-api.eyenetra.com/api/v1/customers?email=johndoe@email.com`
 
 The following columns are available for filtering: 
  
@@ -107,7 +107,7 @@ The following columns are available for filtering:
 
 ### Searching
 
-`GET  /api/v1/customers?q=John`
+`GET  https://insight-api.eyenetra.com/api/v1/customers?q=John`
 
 You can use the param "q" (for query) to set a string that will be used to search alike entries (case insensitive, using SQL "LIKE" command) on the following columns:
  
@@ -122,11 +122,11 @@ You can use the param "q" (for query) to set a string that will be used to searc
 
 ### Sorting
 
-`GET  /api/v1/customers?sort=first_name`
+`GET  https://insight-api.eyenetra.com/api/v1/customers?sort=first_name`
 
 The same columns used for filtering can be used for sorting. To sort your request, you pass the column name on the parameter "sort":
 
-`GET  /api/v1/customers?sort=-first_name`
+`GET  https://insight-api.eyenetra.com/api/v1/customers?sort=-first_name`
 
 The default order when passing a parameter is ascending, you can change for descending passing a "-" before the column name:
 
@@ -134,7 +134,7 @@ The default sort for requests is "-updated_at".
 
 ### "Since" parameters
 
-`GET  /api/v1/customers?q=john&sort=-email&updated_since="01-01-2016"`
+`GET  https://insight-api.eyenetra.com/api/v1/customers?q=john&sort=-email&updated_since="01-01-2016"`
 
 You can also set "updated_since" or "created_since" parameters, specifying a bottom limit date or date/time to your requests
 
@@ -164,7 +164,7 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 
 ### HTTP Request
 
-`GET /api/v1/customers/<id>`
+`GET https://insight-api.eyenetra.com/api/v1/customers/<id>`
 
 Obs.: To CSV exported data, add .csv as the format.
 

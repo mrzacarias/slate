@@ -139,7 +139,7 @@ Do not require <a href="#basic-authentication">authentication</a>.
 
 ### HTTP Request
 
-`POST /api/v1/book_visit`
+`POST https://insight-api.eyenetra.com/api/v1/book_visit`
 
 ### Body Parameters
 

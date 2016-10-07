@@ -121,14 +121,14 @@ Get a list of visits.
 
 ### HTTP Request
 
-`GET /api/v1/visits`
+`GET https://insight-api.eyenetra.com/api/v1/visits`
 
 Obs.: To CSV exported data, add .csv as the format.
 
 
 ### Filters
 
-`GET  /api/v1/visits?test_confidence=HIGH`
+`GET  https://insight-api.eyenetra.com/api/v1/visits?test_confidence=HIGH`
 
 The following columns are available for filtering: 
 
@@ -146,7 +146,7 @@ The following columns are available for filtering:
 
 ### Searching
 
-`GET  /api/v1/visits?q=congratulations`
+`GET  https://insight-api.eyenetra.com/api/v1/visits?q=congratulations`
 
 You can use the param "q" (for query) to set a string that will be used to search alike entries (case insensitive, using SQL "LIKE" command) on the following columns:
 
@@ -161,11 +161,11 @@ You can use the param "q" (for query) to set a string that will be used to searc
 
 ### Sorting
 
-`GET  /api/v1/visits?sort=uuid`
+`GET  https://insight-api.eyenetra.com/api/v1/visits?sort=uuid`
 
 The same columns used for filtering can be used for sorting. To sort your request, you pass the column name on the parameter "sort":
 
-`GET  /api/v1/visits?sort=-uuid`
+`GET  https://insight-api.eyenetra.com/api/v1/visits?sort=-uuid`
 
 The default order when passing a parameter is ascending, you can change for descending passing a "-" before the column name:
 
@@ -173,7 +173,7 @@ The default sort for requests is "-updated_at".
 
 ### "Since" parameters
 
-`GET  /api/v1/visits?test_confidence=LOW&sort=-uuid&updated_since="01-01-2016"`
+`GET  https://insight-api.eyenetra.com/api/v1/visits?test_confidence=LOW&sort=-uuid&updated_since="01-01-2016"`
 
 You can also set "updated_since" or "created_since" parameters, specifying a bottom limit date or date/time to your requests
 
@@ -211,7 +211,7 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 
 ### HTTP Request
 
-`GET /api/v1/visits/:id`
+`GET https://insight-api.eyenetra.com/api/v1/visits/:id`
 
 Obs.: To CSV exported data, add .csv as the format.
 
@@ -250,4 +250,4 @@ Update a visit, for example to mark a decision.
 
 ### HTTP Request
 
-`PUT /api/v1/visits/:id`
+`PUT https://insight-api.eyenetra.com/api/v1/visits/:id`

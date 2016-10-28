@@ -19,8 +19,11 @@
 ````
 
 **Appointments** are structures containing the appointment data of visits scheduled by patients at the book visit page.
+Each appointment is related to one user ID and this user can get the list of his appointments by accessing the index request.
 
 ### Structure
+
+The appointment object structure is optimized to work with [Full Calendar](https://fullcalendar.io/).
 
 Field           | Description
 --------------- | -------------------------------------------------------------------------------
@@ -72,6 +75,7 @@ All requests require <a href="#basic-authentication">authentication</a>.
 ````
 
 The List request will return all the appointments of the current user.
+There's no need to identify the user by passing an ID or something like that, the user will be identified by the auth token.
 
 ### HTTP Request
 

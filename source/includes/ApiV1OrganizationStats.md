@@ -25,15 +25,13 @@
 
 List of **Organization Stats** of the requester organization, as visits, customers and test results counts.
 
+The graph information is optimized to be used with  [Chart.js](http://www.chartjs.org/).
+
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
 </aside>
 
 ## List
-
-### HTTP Request
-
-`GET https://insight-api.eyenetra.com/api/v1/organization_stats/`
 
 > Response Example 
 
@@ -99,3 +97,10 @@ All requests require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
+
+The request information is very basic. The target organization will be defined by the logged user requester.
+
+### HTTP Request
+
+`GET https://insight-api.eyenetra.com/api/v1/organization_stats/`
+

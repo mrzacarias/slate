@@ -22,7 +22,7 @@
 }
 ````
 
-If the OD decided to create a **Prescription**, an instance is created and saved on the database. Is also possible for the OD to update the visit.
+If the OD decided to create a **Prescription**, an instance is created and saved on the database.
 
 ### Structure
 
@@ -70,9 +70,12 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+This show endpoint will return the Prescription information correspondent to the id passed as parameter.
+
 ### HTTP Request
 
 `GET https://insight-api.eyenetra.com/api/v1/prescriptions/{:id}`
+
 
 ## Create
 
@@ -110,9 +113,13 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+If the prescription information is right, a new prescription will be created and the information will be available
+on the response body.
+
 ### HTTP Request
 
 `POST https://insight-api.eyenetra.com/api/v1/prescriptions`
+
 
 ## Update
 
@@ -149,6 +156,8 @@ All requests require <a href="#basic-authentication">authentication</a>.
     }
 }
 ````
+
+Basic update endpoint, will update the target prescription if the request body information is right.
 
 ### HTTP Request
 

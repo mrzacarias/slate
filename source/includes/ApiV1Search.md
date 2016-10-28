@@ -66,6 +66,10 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+The API will search the query term on customers, readings and visits entries.
+
+Note: There's no fuzzy logic (yet).
+
 ### HTTP Request
 
 `GET https://insight-api.eyenetra.com/api/v1/search?q={query}`

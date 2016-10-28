@@ -16,7 +16,6 @@ includes:
  - ApiV1Appointments.md
  - ApiV1Binoculars.md
  - ApiV1BookVisit.md
- - ApiV1CustomerRelationships.md
  - ApiV1Customers.md
  - ApiV1CustomerResults.md
  - ApiV1Emails.md
@@ -38,6 +37,8 @@ search: true
 ---
 
 # Introduction
+
+> [If you don't have yet an EyeNetra account, create one, it's free!](https://insight.eyenetra.com/sign_up)
 
 [Insight](https://eyenetra.com/product-insight.html) is the only modern-day EMR platform for Eye Care Professionals that streamlines patient management and enhances engagement. It’s a natural extension of EyeNetra’s product suite featuring built-in connectivity.
 

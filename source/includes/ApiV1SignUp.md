@@ -1,6 +1,8 @@
 # SignUp
 
-After a customer bought a Netra product, he needs  to **SignUp** to start using his new device. This sign up are responsible to create a organization which encapsulates all the data of this new user, as the user instance itself.
+After a customer bought a Netra product, he needs  to **SignUp** to start using his new device.
+This sign up are responsible to create a organization which encapsulates all the data of this new user, as the user instance itself.
+A user can sign up without devices, by using the [Insight Sign Up Page](https://insight.eyenetra.com/sign_up).
 
 <aside class="warn">
 Do not require <a href="#basic-authentication">authentication</a>.
@@ -80,6 +82,8 @@ Do not require <a href="#basic-authentication">authentication</a>.
   "token": "d75f861ed4401338b736ac4849d80862"
 }
 ````
+
+With the correct data, this endpoint will create a new organization with a Admin user.
 
 ### HTTP Request
 

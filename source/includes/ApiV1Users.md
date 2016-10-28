@@ -149,6 +149,8 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
 }
 ````
 
+This show endpoint will return the User information correspondent to the id passed as parameter.
+
 ### HTTP Request
 
 `GET https://insight-api.eyenetra.com/api/v1/users/{id}`
@@ -187,6 +189,7 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
   }
 }
 ````
+
 ### HTTP Request
 
 `POST https://insight-api.eyenetra.com/api/v1/users`

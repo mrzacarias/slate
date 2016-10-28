@@ -34,10 +34,12 @@
 }
 ````
 
-These are the **Customer Results** after his assigned OD had a decision based on the customer's test results. It's used to build the customer results page, where the customer can print his prescription and use it to order new glasses.
+These are the **Customer Results** after his assigned OD had a decision based on the customer's test results.
+It's used to build the customer results page, on the Insight Portal, where the customer can print his prescription
+and use it to order new glasses.
 
 <aside class="warn">
-All requests require <a href="#basic-authentication">authentication</a>.
+All requests require <a href="#customer-authentication">customer authentication</a>.
 </aside>
 
 ## Show
@@ -75,6 +77,9 @@ All requests require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
+
+The show endpoint will use the visit uuid to identify and load the customer/patient results.
+It requires a customer authentication and is only visible for the correct customer/patient. 
 
 ### HTTP Request
 

@@ -1,6 +1,7 @@
 # Monocular
 
-**Monoculars** are the test result structure responsible to keep the refraction data of a specific eye (Right or Left). Always associated with a Binocular structure.
+**Monoculars** are the test result structure responsible to keep the refraction data of a specific eye (Right or Left).
+They are always associated with a Binocular structure.
 
 > Example of a Monocular structure
 
@@ -57,6 +58,8 @@ All requests require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
+
+This show endpoint will return the Monocular information correspondent to the id passed as parameter.
 
 ### HTTP Request
 

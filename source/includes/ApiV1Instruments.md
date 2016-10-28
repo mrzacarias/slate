@@ -16,7 +16,10 @@
 }
 ````
 
-**Instruments** are structures containing the organization devices information. For EyeNetra devices, the information about each instrument (id, type, etc.) is saved/updated after every new test result finished and uploaded.
+**Instruments** are structures containing the organization devices information.
+For EyeNetra devices, the information about each instrument (id, type, etc.) is saved/updated after
+every new test result finished and uploaded.
+Other non-EyeNetra devices will be saved as "custom" device, when a test result is created.
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
@@ -72,6 +75,8 @@ All requests require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
+
+The basic show endpoint will return the instrument/device information for the Instrument ID passed on the request.
 
 ### HTTP Request
 

@@ -88,8 +88,6 @@ None
 
 ## Show
 
-The show request will return the appointment for the ID passed as parameter.
-
 > Response Example 
 
 ````
@@ -107,6 +105,9 @@ The show request will return the appointment for the ID passed as parameter.
   }
 }
 ````
+
+The show request will return the appointment for the ID passed as parameter.
+
 ### HTTP Request
 
 `GET https://insight-api.eyenetra.com/api/v1/appointments/{id}`

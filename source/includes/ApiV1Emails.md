@@ -56,4 +56,8 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+By passing the visit id to index endpoint, the list of all emails related to this visit will be returned.
+
+### HTTP Request
+
 `GET https://insight-api.eyenetra.com/api/v1/emails?visit_id=[visit id]`

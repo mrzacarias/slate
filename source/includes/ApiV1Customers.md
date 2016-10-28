@@ -22,7 +22,9 @@
 }
 ````
 
-These endpoints returns Eyenetra's **Customers** personal information as list or specific instance. The **"Select New Customer"** endpoint, though, is responsible to create an [customer relationship](ApiV1CustomerRelationships) between the current OD and the next new customer in line.
+These endpoints returns Eyenetra's **Customers** personal information as list or specific instance.
+The **"Select New Customer"** endpoint, though, is responsible to create an [customer relationship](ApiV1CustomerRelationships)
+between the current OD and the next new customer in line.
 
 ### Structure
 
@@ -161,6 +163,8 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
   ]
 }
 ````
+
+This show endpoint will return the Customer information correspondent to the id passed as parameter.
 
 ### HTTP Request
 

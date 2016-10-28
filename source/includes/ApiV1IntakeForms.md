@@ -29,7 +29,8 @@
 }
 ````
 
-**Intake Forms** information of visits uploaded via TeleRx flow.
+**Intake Forms** contains the customer's professional and medical information that created a visit on Insight.
+This visit can be created using the book visit request, with or without appointment information.
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
@@ -96,6 +97,8 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+The filtered request will return the list of intake forms that matches the customer information passed as parameter.
+
 ### HTTP Request
 
 `GET https://insight-api.eyenetra.com/api/v1/intake_forms?filter[customers][email]=customer@mail.com`
@@ -132,7 +135,9 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+This show endpoint will return the intake form information correspondent to the intake form id passed as parameter.
+
 ### HTTP Request
 
-`GET https://insight-api.eyenetra.com/api/v1/intake_forms/{:intake_form_id}`
+`GET https://insight-api.eyenetra.com/api/v1/intake_forms/{id}`
 

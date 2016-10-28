@@ -1,6 +1,8 @@
 # Organizations
 
-**Organizations** are a logic division inside the Insight portal. All ODs, Admins and other users belongs to one and only organization and can make their actions only with elements (customers, visits, test results, etc.) related to this specific organization.
+**Organizations** are a logic group inside the Insight portal.
+All ODs, Admins and other users belongs to one and only organization and can make their actions only
+with elements (customers, visits, test results, etc.) related to this specific organization.
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
@@ -38,9 +40,12 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+This endpoint will return the list of Insight organizations, only for Super Admins.
+
 ### HTTP Request
 
 `GET https://insight-api.eyenetra.com/api/v1/organizations`
+
 
 ## Show
 
@@ -58,11 +63,24 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+This show endpoint will return the Organization information correspondent to the id passed as parameter.
+
 ### HTTP Request
 
 `GET https://insight-api.eyenetra.com/api/v1/organizations/{:organization_id}`
 
+
 ## Create
+
+> Request Body
+
+````
+{
+  "organization": {
+    "name":"blink"
+  }
+}
+````
 
 > Response Example 
 
@@ -78,9 +96,12 @@ All requests require <a href="#basic-authentication">authentication</a>.
 }
 ````
 
+The create endpoint will create a new organization if the correct information is passed.
+
 ### HTTP Request
 
 `POST https://insight-api.eyenetra.com/api/v1/organizations/`
+
 
 ## Update
 
@@ -97,6 +118,8 @@ All requests require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
+
+This update endpoint will update the target organization information.
 
 ### HTTP Request
 

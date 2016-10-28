@@ -1,6 +1,8 @@
 # Book Visit
 
-The **Book Visit** endpoint is responsible to save all the data acquired during a complete visit (readings, customer information, etc.) on the insight database.
+The **Book Visit** endpoint is the most importante input entry on our API, responsible to save all 
+the data acquired during a complete visit (readings, customer information, appointment, etc.)
+on the insight database.
 
 <aside class="warn">
 Do not require <a href="#basic-authentication">authentication</a>.
@@ -136,6 +138,11 @@ Do not require <a href="#basic-authentication">authentication</a>.
   }
 }
 ````
+
+Using the book_visit create endpoint with the correct request body will save a visit on your organization database.
+This visit will be already associated with the user passed on the parameters.
+The apointment information will be loaded on the Visit request (List or Show) and on it's own endpoint.
+If the customer email is already on Insight Database, his information will be updated. If not, a new patient/customer entry will be created.
 
 ### HTTP Request
 

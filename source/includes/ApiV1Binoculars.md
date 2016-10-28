@@ -1,7 +1,5 @@
 # Binocular
 
-**Binoculars** are test results structures containing the binocular data (va, pd, etc.), as the two monoculars instances of customer right and left eyes.
-
 > Example of a Binocular structure
 
 ````
@@ -16,6 +14,12 @@
   "monoculars": ["..."]
 }
 ````
+
+**Binoculars** are test results structures containing both eyes refraction information.
+Each binocular object contains the binocular information (pd, visual acuity for both eyes, etc.) and 
+also contains two monoculars objects, one for right eye and other for left eye.
+
+Se more about the monocular structure at the [correspondent section](#monocular) on this documentation.
 
 ### Structure
 
@@ -48,6 +52,10 @@ All requests require <a href="#basic-authentication">authentication</a>.
   "monoculars": ["..."]
 }
 ````
+
+You can get a specfic binocular information by passing the binocular ID to the show request.
+The object will be returned with the binocular information and also the right and left eyes monocular 
+information, sideloaded on the response body.
 
 ### HTTP Request
 

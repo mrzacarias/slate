@@ -8,8 +8,6 @@ Do not require <a href="#basic-authentication">authentication</a>.
 
 ## Index
 
-### HTTP Request
-
 > Response Example 
 
 ````
@@ -17,6 +15,10 @@ Do not require <a href="#basic-authentication">authentication</a>.
   "version":"0.3.0"
 }
 ````
+
+This endpoint is just a very basic API health check, used normally on tests to verify the API current version.
+
+### HTTP Request
 
 `GET https://insight-api.eyenetra.com/api/v1/health_check`
 

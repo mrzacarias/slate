@@ -1,6 +1,8 @@
 # Readings Import
 
-The **Readings Import** endpoint is used to save readings directly to insight database, without the necessity of a TeleRx flow import. It's used to save the stand-alone, tabletless version of Netra and for Netrometer readings.
+The **Readings Import** endpoint is used to save readings directly to insight database.
+It's used to save the stand-alone, tabletless version of Netra and for Netrometer readings.
+It's also used to save custom readings information.
 
 <aside class="warn">
 All requests require <a href="#basic-authentication">authentication</a>.
@@ -73,6 +75,9 @@ All requests require <a href="#basic-authentication">authentication</a>.
   "test_result_id": 20997
 }
 ````
+
+This is the endpoint used by the current version of Netra/Netrometer devices to save readings to Insight.
+It can be used to save "custom" readings.
 
 ### HTTP Request
 

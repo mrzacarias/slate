@@ -24,7 +24,8 @@
 }
 ````
 
-The **Test Results** are the logic structure used to save the readings from Netra and Netrometer devices and, also, the customer's screening and contacts information.
+The **Test Results** are the logic structure used to save the readings from Netra and Netrometer
+devices and, also, the customer's screening and contacts information.
 
 ### Structure
 
@@ -79,6 +80,9 @@ All requests require <a href="#basic-authentication">authentication</a>.
   ]
 }
 ````
+
+The list will return all test results avaiable for this user. If it's and Admin, everything will be returned.
+If it's an OD, only the test results realated to that user will be returned.
 
 ### HTTP Request
 
@@ -139,6 +143,7 @@ The default sort for requests is "-updated_at".
 
 You can also set "updated_since" or "created_since" parameters, specifying a bottom limit date or date/time to your requests
 
+
 ## Show
 
 > Response Example 
@@ -164,6 +169,8 @@ You can also set "updated_since" or "created_since" parameters, specifying a bot
   }
 }
 ````
+
+This show endpoint will return the Test Result information correspondent to the id passed as parameter.
 
 ### HTTP Request
 
